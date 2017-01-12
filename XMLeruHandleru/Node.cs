@@ -16,6 +16,8 @@ namespace XMLeruHandleru
         {
             Name = name;
             Parent = parent;
+            children = new List<BaseNode>();
+            attributes = new Dictionary<string, string>();
         }
 
         public override BaseNode AddNode(string name)
@@ -37,7 +39,6 @@ namespace XMLeruHandleru
             return n;
         }
 
-
         public override void AddAttr(string k, string v)
         {
             attributes[k] = v;
@@ -53,31 +54,37 @@ namespace XMLeruHandleru
             return res;
         }
 
-        public override string ToString()
+        public override string ToXml(int indent = 0)
         {
-            string res = "<" + Name + AttributesToString() + ">";
+            string indentString = new string(' ', indent);
+            string res = indentString + "<" + Name + AttributesToString() + ">\n";
             foreach (BaseNode n in children)
             {
-                res += n.ToString();
+                res += n.ToXml(indent + 2) + "\n";
             }
 
-            res += "</" + Name + ">";
+            res += indentString + "</" + Name + ">";
             return res;
+        }
+
+        public override string ToString()
+        {
+            return ToXml();
         }
 
         public override BaseNode getChild(int i)
         {
-            return Parent.getChild(i);
+            return children[i];
         }
 
         public override int getChildCount()
         {
-            return Parent.getChildCount();
+            return children.Count;
         }
 
         public override List<BaseNode> GetCssLike(string xpath)
         {
-            return Parent.GetCssLike(xpath);
+            return null;
         }
     }
 }

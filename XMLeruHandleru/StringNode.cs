@@ -40,6 +40,11 @@ namespace XMLeruHandleru
             return Name;
         }
 
+        public override string ToXml(int indent = 0)
+        {
+            return new string(' ', indent) + Name;
+        }
+
         public override BaseNode getChild(int i)
         {
             return Parent.getChild(i);
