@@ -8,7 +8,7 @@ namespace XMLeruHandleru
 {
     class StringNode : BaseNode
     {
-        public StringNode(string name, Node parent)
+        public StringNode(string name, BaseNode parent)
         {
             Name = name;
             Parent = parent;
@@ -16,23 +16,21 @@ namespace XMLeruHandleru
 
         public override BaseNode AddNode(string name)
         {
-            return Parent.AddNode(name);
+            throw new Exception("Action not valid for string");
         }
-
-        public override BaseNode AddNode(Node n)
+        public override BaseNode AddChild(BaseNode n)
         {
-            return Parent.AddNode(n);
+            throw new Exception("Action not valid for string");
         }
 
         public override BaseNode AddString(string s)
         {
-            return Parent.AddString(s);
+            throw new Exception("Action not valid for string");
         }
-
 
         public override void AddAttr(string k, string v)
         {
-            Parent.AddAttr(k, v);
+            throw new Exception("Action not valid for string");
         }
 
         public override string ToString()
@@ -47,17 +45,17 @@ namespace XMLeruHandleru
 
         public override BaseNode getChild(int i)
         {
-            return Parent.getChild(i);
+            throw new Exception("Action not valid for string");
         }
 
         public override int getChildCount()
         {
-            return Parent.getChildCount();
+            throw new Exception("Action not valid for string");
         }
 
         public override List<BaseNode> GetCssLike(string xpath)
         {
-            return Parent.GetCssLike(xpath);
+            throw new Exception("Action not valid for string");
         }
     }
 }

@@ -8,14 +8,13 @@ namespace XMLeruHandleru
 {
     abstract class BaseNode
     {
-        protected Node Parent { get; set; }
+        protected BaseNode Parent { get; set; }
         public string Name { get; protected set; }
 
         public abstract BaseNode AddNode(string name);
-        public abstract BaseNode AddNode(Node n);
         public abstract BaseNode AddString(string s);
+        public abstract BaseNode AddChild(BaseNode n);
         public abstract void AddAttr(string k, string v);
-        public abstract override string ToString();
         public abstract BaseNode getChild(int i);
         public abstract int getChildCount();
         public abstract List<BaseNode> GetCssLike(string query);

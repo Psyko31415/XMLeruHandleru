@@ -9,45 +9,51 @@ namespace XMLeruHandleru
 {
     class Node : BaseNode
     {
-        private List<BaseNode> children;
-        private Dictionary<string, string> attributes;
+        private List<BaseNode> Children { get; set; }
+        private Dictionary<string, string> Attributes { get; set; }
 
-        public Node(string name, Node parent)
+        public Node(string name, BaseNode parent, Dictionary<string, string> attributes)
         {
+            Children = new List<BaseNode>();
             Name = name;
             Parent = parent;
-            children = new List<BaseNode>();
-            attributes = new Dictionary<string, string>();
+            Attributes = attributes;
         }
+
+        public Node(string name, BaseNode parent) : this(name, parent, new Dictionary<string, string>()) { }
+
+        public Node(string name) : this(name, null) { }
+
+        public Node() : this("") { }
 
         public override BaseNode AddNode(string name)
         {
             Node n = new Node(name, this);
-            return AddNode(n);
+            return AddChild(n);
         }
 
-        public override BaseNode AddNode(Node n)
+        public override BaseNode AddChild(BaseNode n)
         {
-            children.Add(n);
+            Children.Add(n);
             return n;
         }
 
         public override BaseNode AddString(string s)
         {
             StringNode n = new StringNode(s, this);
-            children.Add(n);
+            Children.Add(n);
             return n;
         }
 
         public override void AddAttr(string k, string v)
         {
-            attributes[k] = v;
+            Attributes[k] = v;
         }
 
         private string AttributesToString()
         {
             string res = "";
-            foreach(KeyValuePair<string, string> kvp in attributes)
+            foreach(KeyValuePair<string, string> kvp in Attributes)
             {
                 res += " " + kvp.Key + "=\"" + kvp.Value + "\""; 
             }
@@ -58,7 +64,7 @@ namespace XMLeruHandleru
         {
             string indentString = new string(' ', indent);
             string res = indentString + "<" + Name + AttributesToString() + ">\n";
-            foreach (BaseNode n in children)
+            foreach (BaseNode n in Children)
             {
                 res += n.ToXml(indent + 2) + "\n";
             }
@@ -74,17 +80,19 @@ namespace XMLeruHandleru
 
         public override BaseNode getChild(int i)
         {
-            return children[i];
+            return Children[i];
         }
 
         public override int getChildCount()
         {
-            return children.Count;
+            return Children.Count;
         }
 
         public override List<BaseNode> GetCssLike(string xpath)
         {
             return null;
         }
+
+
     }
 }
