@@ -84,5 +84,20 @@ namespace XMLeruHandleru
         {
             throw new Exception("Action not valid for string");
         }
+        /**
+         * @brief Does nothing because StringNodes are not desierable when serching
+         */
+        public override void GetCssLikeRec(string[] rules, ref List<BaseNode> res)
+        {
+            
+        }
+        /**
+         * @brief Since StringNodes are not desierable when serching no rule matches them
+         * @return false
+         */
+        public override bool RulesMatches(string[] rules, int i)
+        {
+            return false;
+        }
     }
 }

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace XMLeruHandleru
@@ -133,15 +134,83 @@ namespace XMLeruHandleru
             return Children.Count;
         }
         /**
-         * @brief Not impelmented
-         * @param query The query
+         * @brief Uses a css like query format to fetch nodes and text see <a href="">here for more info</a>
+         * @param query The query <a href="">more info</a>
          * @return A list of the matching nodes
          */
         public override List<BaseNode> GetCssLike(string query)
         {
-            return null;
+            List<BaseNode> res = new List<BaseNode>();
+            string[] rules = query.Split(' ');
+            if (RulesMatches(rules, rules.Length - 1))
+            {
+                res.Add(this);
+            }
+
+            GetCssLikeRec(rules, ref res);
+            
+            return res;
         }
 
+
+        public override void GetCssLikeRec(string[] rules, ref List<BaseNode> res)
+        {
+            foreach (BaseNode child in Children)
+            {
+                child.GetCssLikeRec(rules, ref res);
+                if (child.RulesMatches(rules, rules.Length - 1))
+                {
+                    res.Add(child);
+                }
+            }
+        }
+
+        public override bool RulesMatches(string[] rules, int i)
+        {
+            if (i == -1)
+            {
+                return true;
+            }
+
+            MatchCollection tmp = Regex.Matches(rules[i], @"\[([^\[\]]+)\]");
+            if (tmp.Count > 0)
+            {
+                string[] kvp = tmp[0].Groups[1].Value.Split('=');
+                
+                if (kvp.Length == 2)
+                {
+                    string value;
+                    if (Attributes.TryGetValue(kvp[0], out value))
+                    {
+                        if (value != kvp[1])
+                        {
+                            return false;
+                        }
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+                else
+                {
+                    return false;
+                }
+            }
+
+            string name = Regex.Matches(rules[i], @"([^\[\]=:]*)")[0].Groups[0].Value;
+            if (name != Name)
+            {
+                return false;
+            }
+            
+            if (Parent == null)
+            {
+                return i == 0; // aka return if the entire ruleset was iterated or not
+            }
+
+            return Parent.RulesMatches(rules, i - 1);
+        }
 
     }
 }

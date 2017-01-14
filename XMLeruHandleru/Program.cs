@@ -10,14 +10,26 @@ namespace XMLeruHandleru
     {
         static void Main(string[] args)
         {
-            //TestManualCreateAndPrint();
-            //TestLoadAndPrintXML();
-            TestLoadAndSaveToFile();
+            // TestManualCreateAndPrint();
+            // TestLoadAndPrintXML();
+            // TestLoadAndSaveToFile();
+            TestLoadAndCssSelect();
+        }
+
+        public static void TestLoadAndCssSelect()
+        {
+            BaseNode root = XMLFileManager.LoadFile("C:\\Users\\Anton\\Desktop\\c#\\XMLeruHandleru\\XMLeruHandleru\\test.xml");
+            List<BaseNode> matches = root.GetCssLike("pommes item");
+            foreach (BaseNode match in matches)
+            {
+                Console.WriteLine(match);
+                Console.WriteLine("---------------");
+            }
         }
 
         public static void TestManualCreateAndPrint()
         {
-            Node root = new Node("root", null);
+            Node root = new Node("item", null);
             root.AddString("ost");
             root.AddNode("item");
             root.AddNode("item");

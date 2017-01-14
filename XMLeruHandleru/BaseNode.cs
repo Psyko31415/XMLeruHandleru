@@ -19,5 +19,7 @@ namespace XMLeruHandleru
         public abstract int GetChildCount();
         public abstract List<BaseNode> GetCssLike(string query);
         public abstract string ToXml(int indent = 0);
+        public abstract void GetCssLikeRec(string[] rules, ref List<BaseNode> res);
+        public abstract bool RulesMatches(string[] rules, int i);
     }
 }

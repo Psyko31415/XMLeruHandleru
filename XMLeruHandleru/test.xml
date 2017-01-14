@@ -1,3 +1,10 @@
 ﻿<root sin="pi" din-mamma="ost">
-  ost
+  <item grej="7">ost</item>
+  <item ost="moj">ost2</item>
+  <item>ost3</item>
+  <item ost="mojar">ost4</item>
+  <item>ost6</item>
+  <pommes>
+    <item>eyy oh</item>    
+  </pommes>
 </root>
