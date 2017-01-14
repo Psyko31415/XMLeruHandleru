@@ -64,6 +64,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
       <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -71,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -88,6 +89,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="class_x_m_leru_handleru_1_1_x_m_l_file_manager-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">XMLeruHandleru.XMLFileManager Class Reference</div>  </div>
@@ -96,23 +98,299 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:af518835562c9dc0e93f2f737923a0935"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af518835562c9dc0e93f2f737923a0935"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>SaveToFile</b> (string path, <a class="el" href="class_x_m_leru_handleru_1_1_base_node.html">BaseNode</a> node)</td></tr>
+<tr class="memitem:af518835562c9dc0e93f2f737923a0935"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_m_leru_handleru_1_1_x_m_l_file_manager.html#af518835562c9dc0e93f2f737923a0935">SaveToFile</a> (string path, <a class="el" href="class_x_m_leru_handleru_1_1_base_node.html">BaseNode</a> node)</td></tr>
+<tr class="memdesc:af518835562c9dc0e93f2f737923a0935"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the xml structure to a file.  <a href="#af518835562c9dc0e93f2f737923a0935">More...</a><br /></td></tr>
 <tr class="separator:af518835562c9dc0e93f2f737923a0935"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e3dfed69563014bb11b61699ce76799"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e3dfed69563014bb11b61699ce76799"></a>
-static <a class="el" href="class_x_m_leru_handleru_1_1_base_node.html">BaseNode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LoadFile</b> (string path)</td></tr>
+<tr class="memitem:a2e3dfed69563014bb11b61699ce76799"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_x_m_leru_handleru_1_1_base_node.html">BaseNode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_m_leru_handleru_1_1_x_m_l_file_manager.html#a2e3dfed69563014bb11b61699ce76799">LoadFile</a> (string path)</td></tr>
+<tr class="memdesc:a2e3dfed69563014bb11b61699ce76799"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a xml file.  <a href="#a2e3dfed69563014bb11b61699ce76799">More...</a><br /></td></tr>
 <tr class="separator:a2e3dfed69563014bb11b61699ce76799"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af04699e6a4e0195b2e408e52aab1eaee"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af04699e6a4e0195b2e408e52aab1eaee"></a>
-static <a class="el" href="class_x_m_leru_handleru_1_1_base_node.html">BaseNode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LoadString</b> (string xml)</td></tr>
+<tr class="memitem:af04699e6a4e0195b2e408e52aab1eaee"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_x_m_leru_handleru_1_1_base_node.html">BaseNode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_m_leru_handleru_1_1_x_m_l_file_manager.html#af04699e6a4e0195b2e408e52aab1eaee">LoadString</a> (string xml)</td></tr>
+<tr class="memdesc:af04699e6a4e0195b2e408e52aab1eaee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads an xml string.  <a href="#af04699e6a4e0195b2e408e52aab1eaee">More...</a><br /></td></tr>
 <tr class="separator:af04699e6a4e0195b2e408e52aab1eaee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:ab2319255e299a848a93e5b464615ecae"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_x_m_leru_handleru_1_1_base_node.html">BaseNode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_m_leru_handleru_1_1_x_m_l_file_manager.html#ab2319255e299a848a93e5b464615ecae">RecLoadXml</a> (string xml, <a class="el" href="class_x_m_leru_handleru_1_1_base_node.html">BaseNode</a> parent)</td></tr>
+<tr class="memdesc:ab2319255e299a848a93e5b464615ecae"><td class="mdescLeft">&#160;</td><td class="mdescRight">The recursive function that converts a xml string to the internal datastructure.  <a href="#ab2319255e299a848a93e5b464615ecae">More...</a><br /></td></tr>
+<tr class="separator:ab2319255e299a848a93e5b464615ecae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb410d025ea3a465f050996541bb9d1c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_m_leru_handleru_1_1_x_m_l_file_manager.html#adb410d025ea3a465f050996541bb9d1c">AddStringToTree</a> (string xml, int stringStart, int stringStop, <a class="el" href="class_x_m_leru_handleru_1_1_base_node.html">BaseNode</a> parent)</td></tr>
+<tr class="memdesc:adb410d025ea3a465f050996541bb9d1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a string node to the internal tree. Used by ::RecLoadXml()  <a href="#adb410d025ea3a465f050996541bb9d1c">More...</a><br /></td></tr>
+<tr class="separator:adb410d025ea3a465f050996541bb9d1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecd66054ac6671e6723bd437fa5a73b1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_m_leru_handleru_1_1_x_m_l_file_manager.html#aecd66054ac6671e6723bd437fa5a73b1">LoadHead</a> (string data, out string name, out Dictionary&lt; string, string &gt; attrs)</td></tr>
+<tr class="memdesc:aecd66054ac6671e6723bd437fa5a73b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses and loads the xml head for a node.  <a href="#aecd66054ac6671e6723bd437fa5a73b1">More...</a><br /></td></tr>
+<tr class="separator:aecd66054ac6671e6723bd437fa5a73b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="adb410d025ea3a465f050996541bb9d1c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void XMLeruHandleru.XMLFileManager.AddStringToTree </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>xml</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>stringStart</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>stringStop</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_x_m_leru_handleru_1_1_base_node.html">BaseNode</a>&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Adds a string node to the internal tree. Used by ::RecLoadXml() </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">xml</td><td>The xml string to gather a data string from </td></tr>
+    <tr><td class="paramname">stringStart</td><td>The start index for the datastring </td></tr>
+    <tr><td class="paramname">stringStop</td><td>The stop index for the datastring </td></tr>
+    <tr><td class="paramname">parent</td><td>The parent node, to which the newly created <a class="el" href="class_x_m_leru_handleru_1_1_string_node.html">StringNode</a> is appenden </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2e3dfed69563014bb11b61699ce76799"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_x_m_leru_handleru_1_1_base_node.html">BaseNode</a> XMLeruHandleru.XMLFileManager.LoadFile </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Loads a xml file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>The filepath to the file relative to cwd or absolute </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The xml structure </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aecd66054ac6671e6723bd437fa5a73b1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void XMLeruHandleru.XMLFileManager.LoadHead </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out string&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out Dictionary&lt; string, string &gt;&#160;</td>
+          <td class="paramname"><em>attrs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Parses and loads the xml head for a node. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>The head itself </td></tr>
+    <tr><td class="paramname">name</td><td>The computed name of the node </td></tr>
+    <tr><td class="paramname">attrs</td><td>The computed attributes of the node </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af04699e6a4e0195b2e408e52aab1eaee"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_x_m_leru_handleru_1_1_base_node.html">BaseNode</a> XMLeruHandleru.XMLFileManager.LoadString </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>xml</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Loads an xml string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">xml</td><td>The string to be loaded </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The xml structure </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab2319255e299a848a93e5b464615ecae"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_x_m_leru_handleru_1_1_base_node.html">BaseNode</a> XMLeruHandleru.XMLFileManager.RecLoadXml </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>xml</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_x_m_leru_handleru_1_1_base_node.html">BaseNode</a>&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The recursive function that converts a xml string to the internal datastructure. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">xml</td><td>The string to be converted </td></tr>
+    <tr><td class="paramname">parent</td><td>The parent node of the xml string, or null if current xml is root </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The loaded node </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af518835562c9dc0e93f2f737923a0935"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void XMLeruHandleru.XMLFileManager.SaveToFile </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_x_m_leru_handleru_1_1_base_node.html">BaseNode</a>&#160;</td>
+          <td class="paramname"><em>node</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Saves the xml structure to a file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>The path to where the xml should be saved </td></tr>
+    <tr><td class="paramname">node</td><td>The node to save from </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>XMLeruHandleru/XMLFileManager.cs</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 14 2017 14:33:49 for XMLeruHandleru by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 14 2017 17:19:59 for XMLeruHandleru by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

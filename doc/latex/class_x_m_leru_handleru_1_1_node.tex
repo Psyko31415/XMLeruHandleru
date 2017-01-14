@@ -9,43 +9,317 @@ Inheritance diagram for X\+M\+Leru\+Handleru.\+Node\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_x_m_leru_handleru_1_1_node_af3e096333b8dcc74789ebc04c0984856}{}{\bfseries Node} (string name, \hyperlink{class_x_m_leru_handleru_1_1_base_node}{Base\+Node} parent, Dictionary$<$ string, string $>$ attributes)\label{class_x_m_leru_handleru_1_1_node_af3e096333b8dcc74789ebc04c0984856}
+\hyperlink{class_x_m_leru_handleru_1_1_node_af3e096333b8dcc74789ebc04c0984856}{Node} (string name, \hyperlink{class_x_m_leru_handleru_1_1_base_node}{Base\+Node} parent, Dictionary$<$ string, string $>$ attributes)
+\begin{DoxyCompactList}\small\item\em Creates a new node without children. \end{DoxyCompactList}\item 
+\hyperlink{class_x_m_leru_handleru_1_1_node_a8060ae6840e807ebf3d3ef7f27a468bf}{Node} (string name, \hyperlink{class_x_m_leru_handleru_1_1_base_node}{Base\+Node} parent)
+\begin{DoxyCompactList}\small\item\em Creates a new node without children and attributes. \end{DoxyCompactList}\item 
+\hyperlink{class_x_m_leru_handleru_1_1_node_ad8005a9ca54062189361e811e7064cff}{Node} (string name)
+\begin{DoxyCompactList}\small\item\em Creates a new root node without children, attributes and parent. \end{DoxyCompactList}\item 
+override \hyperlink{class_x_m_leru_handleru_1_1_base_node}{Base\+Node} \hyperlink{class_x_m_leru_handleru_1_1_node_aa79ab2740c301fca30270de273d1c796}{Add\+Node} (string name)
+\begin{DoxyCompactList}\small\item\em Creates and adds a child \hyperlink{class_x_m_leru_handleru_1_1_node}{Node}. \end{DoxyCompactList}\item 
+override \hyperlink{class_x_m_leru_handleru_1_1_base_node}{Base\+Node} \hyperlink{class_x_m_leru_handleru_1_1_node_ad6070ed490bfde070bdb07461fd873e1}{Add\+Child} (\hyperlink{class_x_m_leru_handleru_1_1_base_node}{Base\+Node} n)
+\begin{DoxyCompactList}\small\item\em Adds a child. \end{DoxyCompactList}\item 
+override \hyperlink{class_x_m_leru_handleru_1_1_base_node}{Base\+Node} \hyperlink{class_x_m_leru_handleru_1_1_node_a74b20c07c1d044392ae7670d58679c90}{Add\+String} (string s)
+\begin{DoxyCompactList}\small\item\em Creates and adds a child \hyperlink{class_x_m_leru_handleru_1_1_string_node}{String\+Node}. \end{DoxyCompactList}\item 
+override void \hyperlink{class_x_m_leru_handleru_1_1_node_af847932f7294cc39d8a3f6f89062a950}{Add\+Attr} (string k, string v)
+\begin{DoxyCompactList}\small\item\em Adds an attribute. \end{DoxyCompactList}\item 
+override string \hyperlink{class_x_m_leru_handleru_1_1_node_a29a231aa34d23b491600f13916bcb5de}{To\+Xml} (int indent=0)
+\begin{DoxyCompactList}\small\item\em Creates an xml string. \end{DoxyCompactList}\item 
+override string \hyperlink{class_x_m_leru_handleru_1_1_node_aa35d6d52814845f0c3f72ccdcdc20d13}{To\+String} ()
+\begin{DoxyCompactList}\small\item\em Creates a string representation of the node. \end{DoxyCompactList}\item 
+override \hyperlink{class_x_m_leru_handleru_1_1_base_node}{Base\+Node} \hyperlink{class_x_m_leru_handleru_1_1_node_a2e756780a13a8ce3f8b84aaa61a6c0cc}{Get\+Child} (int i)
+\begin{DoxyCompactList}\small\item\em Returns the i\+:th child. \end{DoxyCompactList}\item 
+override int \hyperlink{class_x_m_leru_handleru_1_1_node_a8d024d88abb37f16a7b46cb5bfdf5345}{Get\+Child\+Count} ()
+\begin{DoxyCompactList}\small\item\em Returns the number of children. \end{DoxyCompactList}\item 
+override List$<$ \hyperlink{class_x_m_leru_handleru_1_1_base_node}{Base\+Node} $>$ \hyperlink{class_x_m_leru_handleru_1_1_node_a2d2c1b582bd36ee9241763d108bd82e0}{Get\+Css\+Like} (string query)
+\begin{DoxyCompactList}\small\item\em Not impelmented. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_x_m_leru_handleru_1_1_node_afa682372142a202eca56962f9ca4eb6a}{}List$<$ \hyperlink{class_x_m_leru_handleru_1_1_base_node}{Base\+Node} $>$ {\bfseries Children}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}\label{class_x_m_leru_handleru_1_1_node_afa682372142a202eca56962f9ca4eb6a}
 
 \item 
-\hypertarget{class_x_m_leru_handleru_1_1_node_a8060ae6840e807ebf3d3ef7f27a468bf}{}{\bfseries Node} (string name, \hyperlink{class_x_m_leru_handleru_1_1_base_node}{Base\+Node} parent)\label{class_x_m_leru_handleru_1_1_node_a8060ae6840e807ebf3d3ef7f27a468bf}
-
-\item 
-\hypertarget{class_x_m_leru_handleru_1_1_node_ad8005a9ca54062189361e811e7064cff}{}{\bfseries Node} (string name)\label{class_x_m_leru_handleru_1_1_node_ad8005a9ca54062189361e811e7064cff}
-
-\item 
-\hypertarget{class_x_m_leru_handleru_1_1_node_aa79ab2740c301fca30270de273d1c796}{}override \hyperlink{class_x_m_leru_handleru_1_1_base_node}{Base\+Node} {\bfseries Add\+Node} (string name)\label{class_x_m_leru_handleru_1_1_node_aa79ab2740c301fca30270de273d1c796}
-
-\item 
-\hypertarget{class_x_m_leru_handleru_1_1_node_ad6070ed490bfde070bdb07461fd873e1}{}override \hyperlink{class_x_m_leru_handleru_1_1_base_node}{Base\+Node} {\bfseries Add\+Child} (\hyperlink{class_x_m_leru_handleru_1_1_base_node}{Base\+Node} n)\label{class_x_m_leru_handleru_1_1_node_ad6070ed490bfde070bdb07461fd873e1}
-
-\item 
-\hypertarget{class_x_m_leru_handleru_1_1_node_a74b20c07c1d044392ae7670d58679c90}{}override \hyperlink{class_x_m_leru_handleru_1_1_base_node}{Base\+Node} {\bfseries Add\+String} (string s)\label{class_x_m_leru_handleru_1_1_node_a74b20c07c1d044392ae7670d58679c90}
-
-\item 
-\hypertarget{class_x_m_leru_handleru_1_1_node_af847932f7294cc39d8a3f6f89062a950}{}override void {\bfseries Add\+Attr} (string k, string v)\label{class_x_m_leru_handleru_1_1_node_af847932f7294cc39d8a3f6f89062a950}
-
-\item 
-\hypertarget{class_x_m_leru_handleru_1_1_node_a29a231aa34d23b491600f13916bcb5de}{}override string {\bfseries To\+Xml} (int indent=0)\label{class_x_m_leru_handleru_1_1_node_a29a231aa34d23b491600f13916bcb5de}
-
-\item 
-\hypertarget{class_x_m_leru_handleru_1_1_node_aa35d6d52814845f0c3f72ccdcdc20d13}{}override string {\bfseries To\+String} ()\label{class_x_m_leru_handleru_1_1_node_aa35d6d52814845f0c3f72ccdcdc20d13}
-
-\item 
-\hypertarget{class_x_m_leru_handleru_1_1_node_ab8e1bbaf7d37712935a11895e64f388b}{}override \hyperlink{class_x_m_leru_handleru_1_1_base_node}{Base\+Node} {\bfseries get\+Child} (int i)\label{class_x_m_leru_handleru_1_1_node_ab8e1bbaf7d37712935a11895e64f388b}
-
-\item 
-\hypertarget{class_x_m_leru_handleru_1_1_node_a7ae9558a47ff7f2b57fb181ae0979f98}{}override int {\bfseries get\+Child\+Count} ()\label{class_x_m_leru_handleru_1_1_node_a7ae9558a47ff7f2b57fb181ae0979f98}
-
-\item 
-\hypertarget{class_x_m_leru_handleru_1_1_node_a026cf872ba21b782d2e1b7919660294e}{}override List$<$ \hyperlink{class_x_m_leru_handleru_1_1_base_node}{Base\+Node} $>$ {\bfseries Get\+Css\+Like} (string xpath)\label{class_x_m_leru_handleru_1_1_node_a026cf872ba21b782d2e1b7919660294e}
+\hypertarget{class_x_m_leru_handleru_1_1_node_a4d11bd34b693152c527f9add8997cea5}{}Dictionary$<$ string, string $>$ {\bfseries Attributes}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}\label{class_x_m_leru_handleru_1_1_node_a4d11bd34b693152c527f9add8997cea5}
 
 \end{DoxyCompactItemize}
-\subsection*{Additional Inherited Members}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{class_x_m_leru_handleru_1_1_node_aeb431cd29311f2a157930ae31cb61bf8}{Attributes\+To\+String} ()
+\begin{DoxyCompactList}\small\item\em Converts the dictionary of attributes to a string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_x_m_leru_handleru_1_1_node_af3e096333b8dcc74789ebc04c0984856}{}\index{X\+M\+Leru\+Handleru\+::\+Node@{X\+M\+Leru\+Handleru\+::\+Node}!Node@{Node}}
+\index{Node@{Node}!X\+M\+Leru\+Handleru\+::\+Node@{X\+M\+Leru\+Handleru\+::\+Node}}
+\subsubsection[{Node}]{\setlength{\rightskip}{0pt plus 5cm}X\+M\+Leru\+Handleru.\+Node.\+Node (
+\begin{DoxyParamCaption}
+\item[{string}]{name, }
+\item[{{\bf Base\+Node}}]{parent, }
+\item[{Dictionary$<$ string, string $>$}]{attributes}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_x_m_leru_handleru_1_1_node_af3e096333b8dcc74789ebc04c0984856}
+
+
+Creates a new node without children. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the node \\
+\hline
+{\em parent} & The nodes parent or null if the node is root \\
+\hline
+{\em attributes} & The attributes associated with the node \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_x_m_leru_handleru_1_1_node_a8060ae6840e807ebf3d3ef7f27a468bf}{}\index{X\+M\+Leru\+Handleru\+::\+Node@{X\+M\+Leru\+Handleru\+::\+Node}!Node@{Node}}
+\index{Node@{Node}!X\+M\+Leru\+Handleru\+::\+Node@{X\+M\+Leru\+Handleru\+::\+Node}}
+\subsubsection[{Node}]{\setlength{\rightskip}{0pt plus 5cm}X\+M\+Leru\+Handleru.\+Node.\+Node (
+\begin{DoxyParamCaption}
+\item[{string}]{name, }
+\item[{{\bf Base\+Node}}]{parent}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_x_m_leru_handleru_1_1_node_a8060ae6840e807ebf3d3ef7f27a468bf}
+
+
+Creates a new node without children and attributes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the node \\
+\hline
+{\em parent} & The nodes parent or null if the node is root \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_x_m_leru_handleru_1_1_node_ad8005a9ca54062189361e811e7064cff}{}\index{X\+M\+Leru\+Handleru\+::\+Node@{X\+M\+Leru\+Handleru\+::\+Node}!Node@{Node}}
+\index{Node@{Node}!X\+M\+Leru\+Handleru\+::\+Node@{X\+M\+Leru\+Handleru\+::\+Node}}
+\subsubsection[{Node}]{\setlength{\rightskip}{0pt plus 5cm}X\+M\+Leru\+Handleru.\+Node.\+Node (
+\begin{DoxyParamCaption}
+\item[{string}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_x_m_leru_handleru_1_1_node_ad8005a9ca54062189361e811e7064cff}
+
+
+Creates a new root node without children, attributes and parent. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the node \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_x_m_leru_handleru_1_1_node_af847932f7294cc39d8a3f6f89062a950}{}\index{X\+M\+Leru\+Handleru\+::\+Node@{X\+M\+Leru\+Handleru\+::\+Node}!Add\+Attr@{Add\+Attr}}
+\index{Add\+Attr@{Add\+Attr}!X\+M\+Leru\+Handleru\+::\+Node@{X\+M\+Leru\+Handleru\+::\+Node}}
+\subsubsection[{Add\+Attr}]{\setlength{\rightskip}{0pt plus 5cm}override void X\+M\+Leru\+Handleru.\+Node.\+Add\+Attr (
+\begin{DoxyParamCaption}
+\item[{string}]{k, }
+\item[{string}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_x_m_leru_handleru_1_1_node_af847932f7294cc39d8a3f6f89062a950}
+
+
+Adds an attribute. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k} & The attribute key \\
+\hline
+{\em v} & The attribute value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_x_m_leru_handleru_1_1_base_node}{X\+M\+Leru\+Handleru.\+Base\+Node}.
+
+\hypertarget{class_x_m_leru_handleru_1_1_node_ad6070ed490bfde070bdb07461fd873e1}{}\index{X\+M\+Leru\+Handleru\+::\+Node@{X\+M\+Leru\+Handleru\+::\+Node}!Add\+Child@{Add\+Child}}
+\index{Add\+Child@{Add\+Child}!X\+M\+Leru\+Handleru\+::\+Node@{X\+M\+Leru\+Handleru\+::\+Node}}
+\subsubsection[{Add\+Child}]{\setlength{\rightskip}{0pt plus 5cm}override {\bf Base\+Node} X\+M\+Leru\+Handleru.\+Node.\+Add\+Child (
+\begin{DoxyParamCaption}
+\item[{{\bf Base\+Node}}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_x_m_leru_handleru_1_1_node_ad6070ed490bfde070bdb07461fd873e1}
+
+
+Adds a child. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & The child to add \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The added child 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_x_m_leru_handleru_1_1_base_node}{X\+M\+Leru\+Handleru.\+Base\+Node}.
+
+\hypertarget{class_x_m_leru_handleru_1_1_node_aa79ab2740c301fca30270de273d1c796}{}\index{X\+M\+Leru\+Handleru\+::\+Node@{X\+M\+Leru\+Handleru\+::\+Node}!Add\+Node@{Add\+Node}}
+\index{Add\+Node@{Add\+Node}!X\+M\+Leru\+Handleru\+::\+Node@{X\+M\+Leru\+Handleru\+::\+Node}}
+\subsubsection[{Add\+Node}]{\setlength{\rightskip}{0pt plus 5cm}override {\bf Base\+Node} X\+M\+Leru\+Handleru.\+Node.\+Add\+Node (
+\begin{DoxyParamCaption}
+\item[{string}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_x_m_leru_handleru_1_1_node_aa79ab2740c301fca30270de273d1c796}
+
+
+Creates and adds a child \hyperlink{class_x_m_leru_handleru_1_1_node}{Node}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the to be node \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The created node 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_x_m_leru_handleru_1_1_base_node}{X\+M\+Leru\+Handleru.\+Base\+Node}.
+
+\hypertarget{class_x_m_leru_handleru_1_1_node_a74b20c07c1d044392ae7670d58679c90}{}\index{X\+M\+Leru\+Handleru\+::\+Node@{X\+M\+Leru\+Handleru\+::\+Node}!Add\+String@{Add\+String}}
+\index{Add\+String@{Add\+String}!X\+M\+Leru\+Handleru\+::\+Node@{X\+M\+Leru\+Handleru\+::\+Node}}
+\subsubsection[{Add\+String}]{\setlength{\rightskip}{0pt plus 5cm}override {\bf Base\+Node} X\+M\+Leru\+Handleru.\+Node.\+Add\+String (
+\begin{DoxyParamCaption}
+\item[{string}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_x_m_leru_handleru_1_1_node_a74b20c07c1d044392ae7670d58679c90}
+
+
+Creates and adds a child \hyperlink{class_x_m_leru_handleru_1_1_string_node}{String\+Node}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & The content of the to be node \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The created node 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_x_m_leru_handleru_1_1_base_node}{X\+M\+Leru\+Handleru.\+Base\+Node}.
+
+\hypertarget{class_x_m_leru_handleru_1_1_node_aeb431cd29311f2a157930ae31cb61bf8}{}\index{X\+M\+Leru\+Handleru\+::\+Node@{X\+M\+Leru\+Handleru\+::\+Node}!Attributes\+To\+String@{Attributes\+To\+String}}
+\index{Attributes\+To\+String@{Attributes\+To\+String}!X\+M\+Leru\+Handleru\+::\+Node@{X\+M\+Leru\+Handleru\+::\+Node}}
+\subsubsection[{Attributes\+To\+String}]{\setlength{\rightskip}{0pt plus 5cm}string X\+M\+Leru\+Handleru.\+Node.\+Attributes\+To\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\label{class_x_m_leru_handleru_1_1_node_aeb431cd29311f2a157930ae31cb61bf8}
+
+
+Converts the dictionary of attributes to a string. 
+
+\begin{DoxyReturn}{Returns}
+The string 
+\end{DoxyReturn}
+\hypertarget{class_x_m_leru_handleru_1_1_node_a2e756780a13a8ce3f8b84aaa61a6c0cc}{}\index{X\+M\+Leru\+Handleru\+::\+Node@{X\+M\+Leru\+Handleru\+::\+Node}!Get\+Child@{Get\+Child}}
+\index{Get\+Child@{Get\+Child}!X\+M\+Leru\+Handleru\+::\+Node@{X\+M\+Leru\+Handleru\+::\+Node}}
+\subsubsection[{Get\+Child}]{\setlength{\rightskip}{0pt plus 5cm}override {\bf Base\+Node} X\+M\+Leru\+Handleru.\+Node.\+Get\+Child (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_x_m_leru_handleru_1_1_node_a2e756780a13a8ce3f8b84aaa61a6c0cc}
+
+
+Returns the i\+:th child. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & The index of child to get from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The child 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_x_m_leru_handleru_1_1_base_node}{X\+M\+Leru\+Handleru.\+Base\+Node}.
+
+\hypertarget{class_x_m_leru_handleru_1_1_node_a8d024d88abb37f16a7b46cb5bfdf5345}{}\index{X\+M\+Leru\+Handleru\+::\+Node@{X\+M\+Leru\+Handleru\+::\+Node}!Get\+Child\+Count@{Get\+Child\+Count}}
+\index{Get\+Child\+Count@{Get\+Child\+Count}!X\+M\+Leru\+Handleru\+::\+Node@{X\+M\+Leru\+Handleru\+::\+Node}}
+\subsubsection[{Get\+Child\+Count}]{\setlength{\rightskip}{0pt plus 5cm}override int X\+M\+Leru\+Handleru.\+Node.\+Get\+Child\+Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_x_m_leru_handleru_1_1_node_a8d024d88abb37f16a7b46cb5bfdf5345}
+
+
+Returns the number of children. 
+
+\begin{DoxyReturn}{Returns}
+The number of childre 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_x_m_leru_handleru_1_1_base_node}{X\+M\+Leru\+Handleru.\+Base\+Node}.
+
+\hypertarget{class_x_m_leru_handleru_1_1_node_a2d2c1b582bd36ee9241763d108bd82e0}{}\index{X\+M\+Leru\+Handleru\+::\+Node@{X\+M\+Leru\+Handleru\+::\+Node}!Get\+Css\+Like@{Get\+Css\+Like}}
+\index{Get\+Css\+Like@{Get\+Css\+Like}!X\+M\+Leru\+Handleru\+::\+Node@{X\+M\+Leru\+Handleru\+::\+Node}}
+\subsubsection[{Get\+Css\+Like}]{\setlength{\rightskip}{0pt plus 5cm}override List$<${\bf Base\+Node}$>$ X\+M\+Leru\+Handleru.\+Node.\+Get\+Css\+Like (
+\begin{DoxyParamCaption}
+\item[{string}]{query}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_x_m_leru_handleru_1_1_node_a2d2c1b582bd36ee9241763d108bd82e0}
+
+
+Not impelmented. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em query} & The query \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A list of the matching nodes 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_x_m_leru_handleru_1_1_base_node}{X\+M\+Leru\+Handleru.\+Base\+Node}.
+
+\hypertarget{class_x_m_leru_handleru_1_1_node_aa35d6d52814845f0c3f72ccdcdc20d13}{}\index{X\+M\+Leru\+Handleru\+::\+Node@{X\+M\+Leru\+Handleru\+::\+Node}!To\+String@{To\+String}}
+\index{To\+String@{To\+String}!X\+M\+Leru\+Handleru\+::\+Node@{X\+M\+Leru\+Handleru\+::\+Node}}
+\subsubsection[{To\+String}]{\setlength{\rightskip}{0pt plus 5cm}override string X\+M\+Leru\+Handleru.\+Node.\+To\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_x_m_leru_handleru_1_1_node_aa35d6d52814845f0c3f72ccdcdc20d13}
+
+
+Creates a string representation of the node. 
+
+\begin{DoxyReturn}{Returns}
+The corresponding xml string 
+\end{DoxyReturn}
+\hypertarget{class_x_m_leru_handleru_1_1_node_a29a231aa34d23b491600f13916bcb5de}{}\index{X\+M\+Leru\+Handleru\+::\+Node@{X\+M\+Leru\+Handleru\+::\+Node}!To\+Xml@{To\+Xml}}
+\index{To\+Xml@{To\+Xml}!X\+M\+Leru\+Handleru\+::\+Node@{X\+M\+Leru\+Handleru\+::\+Node}}
+\subsubsection[{To\+Xml}]{\setlength{\rightskip}{0pt plus 5cm}override string X\+M\+Leru\+Handleru.\+Node.\+To\+Xml (
+\begin{DoxyParamCaption}
+\item[{int}]{indent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_x_m_leru_handleru_1_1_node_a29a231aa34d23b491600f13916bcb5de}
+
+
+Creates an xml string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em indent} & the number of spaces indentation for current indentation level \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The xml string 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_x_m_leru_handleru_1_1_base_node}{X\+M\+Leru\+Handleru.\+Base\+Node}.
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

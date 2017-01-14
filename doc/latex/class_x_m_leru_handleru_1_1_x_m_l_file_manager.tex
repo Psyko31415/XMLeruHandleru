@@ -3,15 +3,159 @@
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_x_m_leru_handleru_1_1_x_m_l_file_manager_af518835562c9dc0e93f2f737923a0935}{}static void {\bfseries Save\+To\+File} (string path, \hyperlink{class_x_m_leru_handleru_1_1_base_node}{Base\+Node} node)\label{class_x_m_leru_handleru_1_1_x_m_l_file_manager_af518835562c9dc0e93f2f737923a0935}
-
+static void \hyperlink{class_x_m_leru_handleru_1_1_x_m_l_file_manager_af518835562c9dc0e93f2f737923a0935}{Save\+To\+File} (string path, \hyperlink{class_x_m_leru_handleru_1_1_base_node}{Base\+Node} node)
+\begin{DoxyCompactList}\small\item\em Saves the xml structure to a file. \end{DoxyCompactList}\item 
+static \hyperlink{class_x_m_leru_handleru_1_1_base_node}{Base\+Node} \hyperlink{class_x_m_leru_handleru_1_1_x_m_l_file_manager_a2e3dfed69563014bb11b61699ce76799}{Load\+File} (string path)
+\begin{DoxyCompactList}\small\item\em Loads a xml file. \end{DoxyCompactList}\item 
+static \hyperlink{class_x_m_leru_handleru_1_1_base_node}{Base\+Node} \hyperlink{class_x_m_leru_handleru_1_1_x_m_l_file_manager_af04699e6a4e0195b2e408e52aab1eaee}{Load\+String} (string xml)
+\begin{DoxyCompactList}\small\item\em Loads an xml string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_x_m_leru_handleru_1_1_x_m_l_file_manager_a2e3dfed69563014bb11b61699ce76799}{}static \hyperlink{class_x_m_leru_handleru_1_1_base_node}{Base\+Node} {\bfseries Load\+File} (string path)\label{class_x_m_leru_handleru_1_1_x_m_l_file_manager_a2e3dfed69563014bb11b61699ce76799}
+static \hyperlink{class_x_m_leru_handleru_1_1_base_node}{Base\+Node} \hyperlink{class_x_m_leru_handleru_1_1_x_m_l_file_manager_ab2319255e299a848a93e5b464615ecae}{Rec\+Load\+Xml} (string xml, \hyperlink{class_x_m_leru_handleru_1_1_base_node}{Base\+Node} parent)
+\begin{DoxyCompactList}\small\item\em The recursive function that converts a xml string to the internal datastructure. \end{DoxyCompactList}\item 
+static void \hyperlink{class_x_m_leru_handleru_1_1_x_m_l_file_manager_adb410d025ea3a465f050996541bb9d1c}{Add\+String\+To\+Tree} (string xml, int string\+Start, int string\+Stop, \hyperlink{class_x_m_leru_handleru_1_1_base_node}{Base\+Node} parent)
+\begin{DoxyCompactList}\small\item\em Adds a string node to the internal tree. Used by \+::\+Rec\+Load\+Xml() \end{DoxyCompactList}\item 
+static void \hyperlink{class_x_m_leru_handleru_1_1_x_m_l_file_manager_aecd66054ac6671e6723bd437fa5a73b1}{Load\+Head} (string data, out string name, out Dictionary$<$ string, string $>$ attrs)
+\begin{DoxyCompactList}\small\item\em Parses and loads the xml head for a node. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
-\item 
-\hypertarget{class_x_m_leru_handleru_1_1_x_m_l_file_manager_af04699e6a4e0195b2e408e52aab1eaee}{}static \hyperlink{class_x_m_leru_handleru_1_1_base_node}{Base\+Node} {\bfseries Load\+String} (string xml)\label{class_x_m_leru_handleru_1_1_x_m_l_file_manager_af04699e6a4e0195b2e408e52aab1eaee}
 
-\end{DoxyCompactItemize}
+\subsection{Member Function Documentation}
+\hypertarget{class_x_m_leru_handleru_1_1_x_m_l_file_manager_adb410d025ea3a465f050996541bb9d1c}{}\index{X\+M\+Leru\+Handleru\+::\+X\+M\+L\+File\+Manager@{X\+M\+Leru\+Handleru\+::\+X\+M\+L\+File\+Manager}!Add\+String\+To\+Tree@{Add\+String\+To\+Tree}}
+\index{Add\+String\+To\+Tree@{Add\+String\+To\+Tree}!X\+M\+Leru\+Handleru\+::\+X\+M\+L\+File\+Manager@{X\+M\+Leru\+Handleru\+::\+X\+M\+L\+File\+Manager}}
+\subsubsection[{Add\+String\+To\+Tree}]{\setlength{\rightskip}{0pt plus 5cm}static void X\+M\+Leru\+Handleru.\+X\+M\+L\+File\+Manager.\+Add\+String\+To\+Tree (
+\begin{DoxyParamCaption}
+\item[{string}]{xml, }
+\item[{int}]{string\+Start, }
+\item[{int}]{string\+Stop, }
+\item[{{\bf Base\+Node}}]{parent}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}\label{class_x_m_leru_handleru_1_1_x_m_l_file_manager_adb410d025ea3a465f050996541bb9d1c}
+
+
+Adds a string node to the internal tree. Used by \+::\+Rec\+Load\+Xml() 
+
+
+\begin{DoxyParams}{Parameters}
+{\em xml} & The xml string to gather a data string from \\
+\hline
+{\em string\+Start} & The start index for the datastring \\
+\hline
+{\em string\+Stop} & The stop index for the datastring \\
+\hline
+{\em parent} & The parent node, to which the newly created \hyperlink{class_x_m_leru_handleru_1_1_string_node}{String\+Node} is appenden \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{class_x_m_leru_handleru_1_1_x_m_l_file_manager_a2e3dfed69563014bb11b61699ce76799}{}\index{X\+M\+Leru\+Handleru\+::\+X\+M\+L\+File\+Manager@{X\+M\+Leru\+Handleru\+::\+X\+M\+L\+File\+Manager}!Load\+File@{Load\+File}}
+\index{Load\+File@{Load\+File}!X\+M\+Leru\+Handleru\+::\+X\+M\+L\+File\+Manager@{X\+M\+Leru\+Handleru\+::\+X\+M\+L\+File\+Manager}}
+\subsubsection[{Load\+File}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Base\+Node} X\+M\+Leru\+Handleru.\+X\+M\+L\+File\+Manager.\+Load\+File (
+\begin{DoxyParamCaption}
+\item[{string}]{path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{class_x_m_leru_handleru_1_1_x_m_l_file_manager_a2e3dfed69563014bb11b61699ce76799}
+
+
+Loads a xml file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & The filepath to the file relative to cwd or absolute \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The xml structure 
+\end{DoxyReturn}
+\hypertarget{class_x_m_leru_handleru_1_1_x_m_l_file_manager_aecd66054ac6671e6723bd437fa5a73b1}{}\index{X\+M\+Leru\+Handleru\+::\+X\+M\+L\+File\+Manager@{X\+M\+Leru\+Handleru\+::\+X\+M\+L\+File\+Manager}!Load\+Head@{Load\+Head}}
+\index{Load\+Head@{Load\+Head}!X\+M\+Leru\+Handleru\+::\+X\+M\+L\+File\+Manager@{X\+M\+Leru\+Handleru\+::\+X\+M\+L\+File\+Manager}}
+\subsubsection[{Load\+Head}]{\setlength{\rightskip}{0pt plus 5cm}static void X\+M\+Leru\+Handleru.\+X\+M\+L\+File\+Manager.\+Load\+Head (
+\begin{DoxyParamCaption}
+\item[{string}]{data, }
+\item[{out string}]{name, }
+\item[{out Dictionary$<$ string, string $>$}]{attrs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}\label{class_x_m_leru_handleru_1_1_x_m_l_file_manager_aecd66054ac6671e6723bd437fa5a73b1}
+
+
+Parses and loads the xml head for a node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & The head itself \\
+\hline
+{\em name} & The computed name of the node \\
+\hline
+{\em attrs} & The computed attributes of the node \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{class_x_m_leru_handleru_1_1_x_m_l_file_manager_af04699e6a4e0195b2e408e52aab1eaee}{}\index{X\+M\+Leru\+Handleru\+::\+X\+M\+L\+File\+Manager@{X\+M\+Leru\+Handleru\+::\+X\+M\+L\+File\+Manager}!Load\+String@{Load\+String}}
+\index{Load\+String@{Load\+String}!X\+M\+Leru\+Handleru\+::\+X\+M\+L\+File\+Manager@{X\+M\+Leru\+Handleru\+::\+X\+M\+L\+File\+Manager}}
+\subsubsection[{Load\+String}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Base\+Node} X\+M\+Leru\+Handleru.\+X\+M\+L\+File\+Manager.\+Load\+String (
+\begin{DoxyParamCaption}
+\item[{string}]{xml}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{class_x_m_leru_handleru_1_1_x_m_l_file_manager_af04699e6a4e0195b2e408e52aab1eaee}
+
+
+Loads an xml string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em xml} & The string to be loaded \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The xml structure 
+\end{DoxyReturn}
+\hypertarget{class_x_m_leru_handleru_1_1_x_m_l_file_manager_ab2319255e299a848a93e5b464615ecae}{}\index{X\+M\+Leru\+Handleru\+::\+X\+M\+L\+File\+Manager@{X\+M\+Leru\+Handleru\+::\+X\+M\+L\+File\+Manager}!Rec\+Load\+Xml@{Rec\+Load\+Xml}}
+\index{Rec\+Load\+Xml@{Rec\+Load\+Xml}!X\+M\+Leru\+Handleru\+::\+X\+M\+L\+File\+Manager@{X\+M\+Leru\+Handleru\+::\+X\+M\+L\+File\+Manager}}
+\subsubsection[{Rec\+Load\+Xml}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Base\+Node} X\+M\+Leru\+Handleru.\+X\+M\+L\+File\+Manager.\+Rec\+Load\+Xml (
+\begin{DoxyParamCaption}
+\item[{string}]{xml, }
+\item[{{\bf Base\+Node}}]{parent}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}\label{class_x_m_leru_handleru_1_1_x_m_l_file_manager_ab2319255e299a848a93e5b464615ecae}
+
+
+The recursive function that converts a xml string to the internal datastructure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em xml} & The string to be converted \\
+\hline
+{\em parent} & The parent node of the xml string, or null if current xml is root \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The loaded node 
+\end{DoxyReturn}
+\hypertarget{class_x_m_leru_handleru_1_1_x_m_l_file_manager_af518835562c9dc0e93f2f737923a0935}{}\index{X\+M\+Leru\+Handleru\+::\+X\+M\+L\+File\+Manager@{X\+M\+Leru\+Handleru\+::\+X\+M\+L\+File\+Manager}!Save\+To\+File@{Save\+To\+File}}
+\index{Save\+To\+File@{Save\+To\+File}!X\+M\+Leru\+Handleru\+::\+X\+M\+L\+File\+Manager@{X\+M\+Leru\+Handleru\+::\+X\+M\+L\+File\+Manager}}
+\subsubsection[{Save\+To\+File}]{\setlength{\rightskip}{0pt plus 5cm}static void X\+M\+Leru\+Handleru.\+X\+M\+L\+File\+Manager.\+Save\+To\+File (
+\begin{DoxyParamCaption}
+\item[{string}]{path, }
+\item[{{\bf Base\+Node}}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{class_x_m_leru_handleru_1_1_x_m_l_file_manager_af518835562c9dc0e93f2f737923a0935}
+
+
+Saves the xml structure to a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & The path to where the xml should be saved \\
+\hline
+{\em node} & The node to save from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

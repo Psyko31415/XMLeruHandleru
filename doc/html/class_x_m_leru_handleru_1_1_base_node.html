@@ -64,6 +64,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
       <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -71,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -119,12 +120,12 @@ abstract <a class="el" href="class_x_m_leru_handleru_1_1_base_node.html">BaseNod
 <tr class="memitem:a6281b4132c69263e42f79f48d83f0ee0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6281b4132c69263e42f79f48d83f0ee0"></a>
 abstract void&#160;</td><td class="memItemRight" valign="bottom"><b>AddAttr</b> (string k, string v)</td></tr>
 <tr class="separator:a6281b4132c69263e42f79f48d83f0ee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a101c0e7962747eb633402df78289f86e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a101c0e7962747eb633402df78289f86e"></a>
-abstract <a class="el" href="class_x_m_leru_handleru_1_1_base_node.html">BaseNode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getChild</b> (int i)</td></tr>
-<tr class="separator:a101c0e7962747eb633402df78289f86e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10651e524e3ddb41d28b18dab79eda62"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a10651e524e3ddb41d28b18dab79eda62"></a>
-abstract int&#160;</td><td class="memItemRight" valign="bottom"><b>getChildCount</b> ()</td></tr>
-<tr class="separator:a10651e524e3ddb41d28b18dab79eda62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3370786a72aea288391e5975f55ce4e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab3370786a72aea288391e5975f55ce4e"></a>
+abstract <a class="el" href="class_x_m_leru_handleru_1_1_base_node.html">BaseNode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetChild</b> (int i)</td></tr>
+<tr class="separator:ab3370786a72aea288391e5975f55ce4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd7c21e09ca9c074c0e17036e8bf7c67"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acd7c21e09ca9c074c0e17036e8bf7c67"></a>
+abstract int&#160;</td><td class="memItemRight" valign="bottom"><b>GetChildCount</b> ()</td></tr>
+<tr class="separator:acd7c21e09ca9c074c0e17036e8bf7c67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a479e738c0d51104fee57a025649aa69f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a479e738c0d51104fee57a025649aa69f"></a>
 abstract List&lt; <a class="el" href="class_x_m_leru_handleru_1_1_base_node.html">BaseNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetCssLike</b> (string query)</td></tr>
 <tr class="separator:a479e738c0d51104fee57a025649aa69f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,7 +148,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>Name</b><code> [get
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 14 2017 14:33:49 for XMLeruHandleru by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 14 2017 17:19:59 for XMLeruHandleru by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

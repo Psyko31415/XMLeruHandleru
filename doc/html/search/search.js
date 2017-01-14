@@ -7,16 +7,18 @@
 
 var indexSectionsWithContent =
 {
-  0: "bnpsx",
+  0: "abglnprstx",
   1: "bnpsx",
-  2: "x"
+  2: "x",
+  3: "aglnrst"
 };
 
 var indexSectionNames =
 {
   0: "all",
   1: "classes",
-  2: "namespaces"
+  2: "namespaces",
+  3: "functions"
 };
 
 function convertToId(search)
