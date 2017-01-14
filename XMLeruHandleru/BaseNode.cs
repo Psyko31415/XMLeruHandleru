@@ -15,8 +15,8 @@ namespace XMLeruHandleru
         public abstract BaseNode AddString(string s);
         public abstract BaseNode AddChild(BaseNode n);
         public abstract void AddAttr(string k, string v);
-        public abstract BaseNode getChild(int i);
-        public abstract int getChildCount();
+        public abstract BaseNode GetChild(int i);
+        public abstract int GetChildCount();
         public abstract List<BaseNode> GetCssLike(string query);
         public abstract string ToXml(int indent = 0);
     }

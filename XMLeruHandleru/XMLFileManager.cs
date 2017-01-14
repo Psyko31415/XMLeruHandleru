@@ -97,10 +97,9 @@ namespace XMLeruHandleru
         private static void AddStringToTree(string xml, int stringStart, int stringStop, BaseNode parent)
         {
             string content = xml.Substring(stringStart, stringStop - stringStart).Trim();
-            Console.WriteLine("'{0}'", content);
             if (content.Length != 0)
             {
-                BaseNode node = new StringNode(xml.Substring(stringStart, stringStop - stringStart), parent);
+                BaseNode node = new StringNode(content, parent);
                 if (parent != null)
                 {
                     parent.AddChild(node);

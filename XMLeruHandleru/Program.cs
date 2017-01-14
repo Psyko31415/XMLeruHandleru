@@ -37,6 +37,7 @@ namespace XMLeruHandleru
         {
             BaseNode root = XMLFileManager.LoadFile("C:\\Users\\Anton\\Desktop\\c#\\XMLeruHandleru\\XMLeruHandleru\\test.xml");
             XMLFileManager.SaveToFile("ost.xml", root);
+            Console.WriteLine(root);
         }
     }
 }

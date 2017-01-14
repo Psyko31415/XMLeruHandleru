@@ -78,12 +78,12 @@ namespace XMLeruHandleru
             return ToXml();
         }
 
-        public override BaseNode getChild(int i)
+        public override BaseNode GetChild(int i)
         {
             return Children[i];
         }
 
-        public override int getChildCount()
+        public override int GetChildCount()
         {
             return Children.Count;
         }

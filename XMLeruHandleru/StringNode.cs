@@ -18,6 +18,7 @@ namespace XMLeruHandleru
         {
             throw new Exception("Action not valid for string");
         }
+
         public override BaseNode AddChild(BaseNode n)
         {
             throw new Exception("Action not valid for string");
@@ -43,12 +44,12 @@ namespace XMLeruHandleru
             return new string(' ', indent) + Name;
         }
 
-        public override BaseNode getChild(int i)
+        public override BaseNode GetChild(int i)
         {
             throw new Exception("Action not valid for string");
         }
 
-        public override int getChildCount()
+        public override int GetChildCount()
         {
             throw new Exception("Action not valid for string");
         }
