@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="XMLeruHandleru.BaseNode">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAkAAAAECAAIAIAQAUAAAAAAAAEAAAAAAAIAAA=</HashCode>
+      <FileName>BaseNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XMLeruHandleru.Node">
+    <Position X="1.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAkAAAAECAEIAIEAAEQAAAAAAAEAAAQAAAIAAA=</HashCode>
+      <FileName>Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XMLeruHandleru.Program">
+    <Position X="11.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAgAAgAAAAAAAAAAAAAAAAAAAAgAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XMLeruHandleru.StringNode">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAkAAAAECAEIAIAAAEAAAAAAAAEAAAAAAAIAAA=</HashCode>
+      <FileName>StringNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XMLeruHandleru.XMLFileManager">
+    <Position X="9" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAgAAAAAAAAAAAAAAABAAAAAAAAAABAAAAABAA=</HashCode>
+      <FileName>XMLFileManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

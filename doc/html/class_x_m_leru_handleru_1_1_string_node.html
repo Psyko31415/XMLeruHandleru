@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Properties</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -94,36 +94,43 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">XMLeruHandleru.StringNode Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Represents a string value within the document.  
+ <a href="class_x_m_leru_handleru_1_1_string_node.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for XMLeruHandleru.StringNode:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="class_x_m_leru_handleru_1_1_string_node.png" usemap="#XMLeruHandleru.StringNode_map" alt=""/>
   <map id="XMLeruHandleru.StringNode_map" name="XMLeruHandleru.StringNode_map">
-<area href="class_x_m_leru_handleru_1_1_base_node.html" alt="XMLeruHandleru.BaseNode" shape="rect" coords="0,0,177,24"/>
+<area href="class_x_m_leru_handleru_1_1_base_node.html" title="The abstract class that contains every method for the different nodes. " alt="XMLeruHandleru.BaseNode" shape="rect" coords="0,0,177,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a4c1eafc0ac995e89ef5a4af85c0f9c19"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_m_leru_handleru_1_1_string_node.html#a4c1eafc0ac995e89ef5a4af85c0f9c19">StringNode</a> (string name, <a class="el" href="class_x_m_leru_handleru_1_1_base_node.html">BaseNode</a> parent)</td></tr>
-<tr class="memdesc:a4c1eafc0ac995e89ef5a4af85c0f9c19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <a class="el" href="class_x_m_leru_handleru_1_1_string_node.html">StringNode</a>.  <a href="#a4c1eafc0ac995e89ef5a4af85c0f9c19">More...</a><br /></td></tr>
+<tr class="memdesc:a4c1eafc0ac995e89ef5a4af85c0f9c19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <a class="el" href="class_x_m_leru_handleru_1_1_string_node.html" title="Represents a string value within the document. ">StringNode</a>.  <a href="#a4c1eafc0ac995e89ef5a4af85c0f9c19">More...</a><br /></td></tr>
 <tr class="separator:a4c1eafc0ac995e89ef5a4af85c0f9c19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9295646821e8135839f7e731b750e494"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9295646821e8135839f7e731b750e494"></a>
+override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_m_leru_handleru_1_1_string_node.html#a9295646821e8135839f7e731b750e494">GetAttr</a> (string k)</td></tr>
+<tr class="memdesc:a9295646821e8135839f7e731b750e494"><td class="mdescLeft">&#160;</td><td class="mdescRight">Throws an exception because the action can not be applied to a <a class="el" href="class_x_m_leru_handleru_1_1_string_node.html" title="Represents a string value within the document. ">StringNode</a>. <br /></td></tr>
+<tr class="separator:a9295646821e8135839f7e731b750e494"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a577acb87d6791fc9aeacaf9e8e6effcb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a577acb87d6791fc9aeacaf9e8e6effcb"></a>
 override <a class="el" href="class_x_m_leru_handleru_1_1_base_node.html">BaseNode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_m_leru_handleru_1_1_string_node.html#a577acb87d6791fc9aeacaf9e8e6effcb">AddNode</a> (string name)</td></tr>
-<tr class="memdesc:a577acb87d6791fc9aeacaf9e8e6effcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Throws an exception because the action can not be applied to a <a class="el" href="class_x_m_leru_handleru_1_1_string_node.html">StringNode</a>. <br /></td></tr>
+<tr class="memdesc:a577acb87d6791fc9aeacaf9e8e6effcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Throws an exception because the action can not be applied to a <a class="el" href="class_x_m_leru_handleru_1_1_string_node.html" title="Represents a string value within the document. ">StringNode</a>. <br /></td></tr>
 <tr class="separator:a577acb87d6791fc9aeacaf9e8e6effcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e5019cd4fa98a233d1d1d580a861dc4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e5019cd4fa98a233d1d1d580a861dc4"></a>
 override <a class="el" href="class_x_m_leru_handleru_1_1_base_node.html">BaseNode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_m_leru_handleru_1_1_string_node.html#a4e5019cd4fa98a233d1d1d580a861dc4">AddChild</a> (<a class="el" href="class_x_m_leru_handleru_1_1_base_node.html">BaseNode</a> n)</td></tr>
-<tr class="memdesc:a4e5019cd4fa98a233d1d1d580a861dc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Throws an exception because the action can not be applied to a <a class="el" href="class_x_m_leru_handleru_1_1_string_node.html">StringNode</a>. <br /></td></tr>
+<tr class="memdesc:a4e5019cd4fa98a233d1d1d580a861dc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Throws an exception because the action can not be applied to a <a class="el" href="class_x_m_leru_handleru_1_1_string_node.html" title="Represents a string value within the document. ">StringNode</a>. <br /></td></tr>
 <tr class="separator:a4e5019cd4fa98a233d1d1d580a861dc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5eb5f6d350d6fe0561e9bee5370f9038"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5eb5f6d350d6fe0561e9bee5370f9038"></a>
 override <a class="el" href="class_x_m_leru_handleru_1_1_base_node.html">BaseNode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_m_leru_handleru_1_1_string_node.html#a5eb5f6d350d6fe0561e9bee5370f9038">AddString</a> (string s)</td></tr>
-<tr class="memdesc:a5eb5f6d350d6fe0561e9bee5370f9038"><td class="mdescLeft">&#160;</td><td class="mdescRight">Throws an exception because the action can not be applied to a <a class="el" href="class_x_m_leru_handleru_1_1_string_node.html">StringNode</a>. <br /></td></tr>
+<tr class="memdesc:a5eb5f6d350d6fe0561e9bee5370f9038"><td class="mdescLeft">&#160;</td><td class="mdescRight">Throws an exception because the action can not be applied to a <a class="el" href="class_x_m_leru_handleru_1_1_string_node.html" title="Represents a string value within the document. ">StringNode</a>. <br /></td></tr>
 <tr class="separator:a5eb5f6d350d6fe0561e9bee5370f9038"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad90914dceb59dd26271f5266b2d899ca"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad90914dceb59dd26271f5266b2d899ca"></a>
 override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_m_leru_handleru_1_1_string_node.html#ad90914dceb59dd26271f5266b2d899ca">AddAttr</a> (string k, string v)</td></tr>
-<tr class="memdesc:ad90914dceb59dd26271f5266b2d899ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Throws an exception because the action can not be applied to a <a class="el" href="class_x_m_leru_handleru_1_1_string_node.html">StringNode</a>. <br /></td></tr>
+<tr class="memdesc:ad90914dceb59dd26271f5266b2d899ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Throws an exception because the action can not be applied to a <a class="el" href="class_x_m_leru_handleru_1_1_string_node.html" title="Represents a string value within the document. ">StringNode</a>. <br /></td></tr>
 <tr class="separator:ad90914dceb59dd26271f5266b2d899ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeefff8d4054ec20dc817b7cda8130cd6"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_m_leru_handleru_1_1_string_node.html#aeefff8d4054ec20dc817b7cda8130cd6">ToString</a> ()</td></tr>
 <tr class="memdesc:aeefff8d4054ec20dc817b7cda8130cd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string representation of itself.  <a href="#aeefff8d4054ec20dc817b7cda8130cd6">More...</a><br /></td></tr>
@@ -133,28 +140,32 @@ override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 <tr class="separator:ac8507d872f9ad6789758b080894ad78f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b06ece089aaaaa5b5d77fd4768ff12b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b06ece089aaaaa5b5d77fd4768ff12b"></a>
 override <a class="el" href="class_x_m_leru_handleru_1_1_base_node.html">BaseNode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_m_leru_handleru_1_1_string_node.html#a4b06ece089aaaaa5b5d77fd4768ff12b">GetChild</a> (int i)</td></tr>
-<tr class="memdesc:a4b06ece089aaaaa5b5d77fd4768ff12b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Throws an exception because the action can not be applied to a <a class="el" href="class_x_m_leru_handleru_1_1_string_node.html">StringNode</a>. <br /></td></tr>
+<tr class="memdesc:a4b06ece089aaaaa5b5d77fd4768ff12b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Throws an exception because the action can not be applied to a <a class="el" href="class_x_m_leru_handleru_1_1_string_node.html" title="Represents a string value within the document. ">StringNode</a>. <br /></td></tr>
 <tr class="separator:a4b06ece089aaaaa5b5d77fd4768ff12b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac603663bb62e5c3dbb4f99b5167c6ba6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac603663bb62e5c3dbb4f99b5167c6ba6"></a>
 override int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_m_leru_handleru_1_1_string_node.html#ac603663bb62e5c3dbb4f99b5167c6ba6">GetChildCount</a> ()</td></tr>
-<tr class="memdesc:ac603663bb62e5c3dbb4f99b5167c6ba6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Throws an exception because the action can not be applied to a <a class="el" href="class_x_m_leru_handleru_1_1_string_node.html">StringNode</a>. <br /></td></tr>
+<tr class="memdesc:ac603663bb62e5c3dbb4f99b5167c6ba6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Throws an exception because the action can not be applied to a <a class="el" href="class_x_m_leru_handleru_1_1_string_node.html" title="Represents a string value within the document. ">StringNode</a>. <br /></td></tr>
 <tr class="separator:ac603663bb62e5c3dbb4f99b5167c6ba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1a0f24fafb8da6a57e72c951bb16dc1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af1a0f24fafb8da6a57e72c951bb16dc1"></a>
 override List&lt; <a class="el" href="class_x_m_leru_handleru_1_1_base_node.html">BaseNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_m_leru_handleru_1_1_string_node.html#af1a0f24fafb8da6a57e72c951bb16dc1">GetCssLike</a> (string xpath)</td></tr>
-<tr class="memdesc:af1a0f24fafb8da6a57e72c951bb16dc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Throws an exception because the action can not be applied to a <a class="el" href="class_x_m_leru_handleru_1_1_string_node.html">StringNode</a>. <br /></td></tr>
+<tr class="memdesc:af1a0f24fafb8da6a57e72c951bb16dc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Throws an exception because the action can not be applied to a <a class="el" href="class_x_m_leru_handleru_1_1_string_node.html" title="Represents a string value within the document. ">StringNode</a>. <br /></td></tr>
 <tr class="separator:af1a0f24fafb8da6a57e72c951bb16dc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header properties_class_x_m_leru_handleru_1_1_base_node"><td colspan="2" onclick="javascript:toggleInherit('properties_class_x_m_leru_handleru_1_1_base_node')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="class_x_m_leru_handleru_1_1_base_node.html">XMLeruHandleru.BaseNode</a></td></tr>
 <tr class="memitem:ac3c3e0c083a9da350e5511163668ac81 inherit properties_class_x_m_leru_handleru_1_1_base_node"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac3c3e0c083a9da350e5511163668ac81"></a>
-<a class="el" href="class_x_m_leru_handleru_1_1_base_node.html">BaseNode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Parent</b><code> [get, set]</code></td></tr>
+<a class="el" href="class_x_m_leru_handleru_1_1_base_node.html">BaseNode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_m_leru_handleru_1_1_base_node.html#ac3c3e0c083a9da350e5511163668ac81">Parent</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ac3c3e0c083a9da350e5511163668ac81 inherit properties_class_x_m_leru_handleru_1_1_base_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">The parent node. <br /></td></tr>
 <tr class="separator:ac3c3e0c083a9da350e5511163668ac81 inherit properties_class_x_m_leru_handleru_1_1_base_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a693bfdbaf05b7554897d475afd2f4768 inherit properties_class_x_m_leru_handleru_1_1_base_node"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a693bfdbaf05b7554897d475afd2f4768"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>Name</b><code> [get, protected set]</code></td></tr>
+string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_m_leru_handleru_1_1_base_node.html#a693bfdbaf05b7554897d475afd2f4768">Name</a><code> [get, protected set]</code></td></tr>
+<tr class="memdesc:a693bfdbaf05b7554897d475afd2f4768 inherit properties_class_x_m_leru_handleru_1_1_base_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the node. <br /></td></tr>
 <tr class="separator:a693bfdbaf05b7554897d475afd2f4768 inherit properties_class_x_m_leru_handleru_1_1_base_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Represents a string value within the document. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a4c1eafc0ac995e89ef5a4af85c0f9c19"></a>
 <div class="memitem">
 <div class="memproto">
@@ -187,7 +198,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>Name</b><code> [get
 </table>
 </div><div class="memdoc">
 
-<p>Constructs a new <a class="el" href="class_x_m_leru_handleru_1_1_string_node.html">StringNode</a>. </p>
+<p>Constructs a new <a class="el" href="class_x_m_leru_handleru_1_1_string_node.html" title="Represents a string value within the document. ">StringNode</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>The name and content for the node </td></tr>
@@ -266,7 +277,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>Name</b><code> [get
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 14 2017 17:19:59 for XMLeruHandleru by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jan 15 2017 01:52:02 for XMLeruHandleru by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

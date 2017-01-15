@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['node',['Node',['../class_x_m_leru_handleru_1_1_node.html',1,'XMLeruHandleru']]],
-  ['node',['Node',['../class_x_m_leru_handleru_1_1_node.html#af3e096333b8dcc74789ebc04c0984856',1,'XMLeruHandleru.Node.Node(string name, BaseNode parent, Dictionary&lt; string, string &gt; attributes)'],['../class_x_m_leru_handleru_1_1_node.html#a8060ae6840e807ebf3d3ef7f27a468bf',1,'XMLeruHandleru.Node.Node(string name, BaseNode parent)'],['../class_x_m_leru_handleru_1_1_node.html#ad8005a9ca54062189361e811e7064cff',1,'XMLeruHandleru.Node.Node(string name)']]]
+  ['loadfile',['LoadFile',['../class_x_m_leru_handleru_1_1_x_m_l_file_manager.html#a2e3dfed69563014bb11b61699ce76799',1,'XMLeruHandleru::XMLFileManager']]],
+  ['loadhead',['LoadHead',['../class_x_m_leru_handleru_1_1_x_m_l_file_manager.html#aecd66054ac6671e6723bd437fa5a73b1',1,'XMLeruHandleru::XMLFileManager']]],
+  ['loadstring',['LoadString',['../class_x_m_leru_handleru_1_1_x_m_l_file_manager.html#af04699e6a4e0195b2e408e52aab1eaee',1,'XMLeruHandleru::XMLFileManager']]]
 ];

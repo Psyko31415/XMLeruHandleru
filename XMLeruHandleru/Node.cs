@@ -8,9 +8,20 @@ using System.Threading.Tasks;
 
 namespace XMLeruHandleru
 {
+    /**
+     * @brief Represents a xml node with children and attributes.
+     * Example usage: 
+     * \include NodeExample.cs
+     */
     class Node : BaseNode
     {
+        /**
+         * @brief A list of this nodes children
+         */
         private List<BaseNode> Children { get; set; }
+        /**
+         * @brief The attributes associated with this node
+         */
         private Dictionary<string, string> Attributes { get; set; }
         /**
          * @brief Creates a new node without children
@@ -25,6 +36,7 @@ namespace XMLeruHandleru
             Parent = parent;
             Attributes = attributes;
         }
+
         /**
          * @brief Creates a new node without children and attributes
          * @param name The name of the node
@@ -36,7 +48,15 @@ namespace XMLeruHandleru
          * @param name The name of the node
          */
         public Node(string name) : this(name, null) { }
-
+        /**
+         * @brief Return an attribute
+         * @param k The key
+         * @return The corresponding attribute
+         */
+        public override string GetAttr(string k)
+        {
+            return Attributes[k];
+        }
         /**
          * @brief Creates and adds a child Node 
          * @param name The name of the to be node
@@ -134,8 +154,8 @@ namespace XMLeruHandleru
             return Children.Count;
         }
         /**
-         * @brief Uses a css like query format to fetch nodes and text see <a href="">here for more info</a>
-         * @param query The query <a href="">more info</a>
+         * @brief Uses a css like query format to fetch nodes
+         * @param query The query
          * @return A list of the matching nodes
          */
         public override List<BaseNode> GetCssLike(string query)
@@ -152,8 +172,13 @@ namespace XMLeruHandleru
             return res;
         }
 
-
-        public override void GetCssLikeRec(string[] rules, ref List<BaseNode> res)
+        /**
+         * @brief Iterates over the structure and adds every node that matches the rules to a list
+         * @param rules A list with the rules
+         * @param res The output list
+         * @returns void
+         */
+        internal override void GetCssLikeRec(string[] rules, ref List<BaseNode> res)
         {
             foreach (BaseNode child in Children)
             {
@@ -164,14 +189,19 @@ namespace XMLeruHandleru
                 }
             }
         }
-
-        public override bool RulesMatches(string[] rules, int i)
+        /**
+         * @brief Returns if a ruleset maches the current node
+         * @param rules The list of all rules
+         * @param i The current rule index
+         * @returns If the rules match or not
+         */
+        internal override bool RulesMatches(string[] rules, int i)
         {
             if (i == -1)
             {
                 return true;
             }
-
+            bool kvpMatches = true;
             MatchCollection tmp = Regex.Matches(rules[i], @"\[([^\[\]]+)\]");
             if (tmp.Count > 0)
             {
@@ -184,33 +214,39 @@ namespace XMLeruHandleru
                     {
                         if (value != kvp[1])
                         {
-                            return false;
+                            kvpMatches = false;
                         }
                     }
                     else
                     {
-                        return false;
+                        kvpMatches = false;
                     }
                 }
                 else
                 {
-                    return false;
+                    kvpMatches = false;
                 }
             }
 
+            
             string name = Regex.Matches(rules[i], @"([^\[\]=:]*)")[0].Groups[0].Value;
-            if (name != Name)
+            bool nameMatches = name == Name;
+
+            if (Parent == null)
             {
                 return false;
             }
-            
-            if (Parent == null)
+            else
             {
-                return i == 0; // aka return if the entire ruleset was iterated or not
+                if (nameMatches && kvpMatches)
+                {
+                    return Parent.RulesMatches(rules, i - 1);
+                }
+                else
+                {
+                    return Parent.RulesMatches(rules, i);
+                }
             }
-
-            return Parent.RulesMatches(rules, i - 1);
         }
-
     }
 }

@@ -7,14 +7,20 @@ using System.Threading.Tasks;
 
 namespace XMLeruHandleru
 {
+    /**
+     * @brief A class with functions to interact with the file system. 
+     * Exampel usage: 
+     * \include XMLFileManagerExample.cs
+     */
     class XMLFileManager
     {
-        /**
+        /** 
          * @brief Saves the xml structure to a file
          * @param path The path to where the xml should be saved
          * @param node The node to save from
          * @return void
-         */ 
+         * 
+         */
         public static void SaveToFile(string path, BaseNode node)
         {
             File.WriteAllText(path, node.ToString());
@@ -23,6 +29,7 @@ namespace XMLeruHandleru
          * @brief Loads a xml file
          * @param path The filepath to the file relative to cwd or absolute
          * @return The xml structure
+         * 
          */
         public static BaseNode LoadFile(string path)
         {
@@ -32,6 +39,7 @@ namespace XMLeruHandleru
          * @brief Loads an xml string
          * @param xml The string to be loaded
          * @return The xml structure
+         * 
          */
         public static BaseNode LoadString(string xml)
         {
@@ -113,7 +121,7 @@ namespace XMLeruHandleru
             return node;   
         }
         /**
-         * @brief Adds a string node to the internal tree. Used by ::RecLoadXml()
+         * @brief Adds a string node to the internal tree. Used by RecLoadXml()
          * @param xml The xml string to gather a data string from 
          * @param stringStart The start index for the datastring
          * @param stringStop The stop index for the datastring

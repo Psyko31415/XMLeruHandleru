@@ -1,0 +1,26 @@
+\hypertarget{_load_xml_file_example_8cs-example}{}\section{Load\+Xml\+File\+Example.\+cs}
+Loads a xml file 
+\begin{DoxyParams}{Parameters}
+{\em path} & The filepath to the file relative to cwd or absolute \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The xml structure
+\end{DoxyReturn}
+
+\begin{DoxyCodeInclude}
+
+
+\textcolor{keyword}{namespace }\hyperlink{namespace_x_m_leru_handleru}{XMLeruHandleru}.examples
+\{
+    \textcolor{keyword}{class }LoadXmlFileExample
+    \{
+        \textcolor{keyword}{static} \textcolor{keywordtype}{void} Main(\textcolor{keywordtype}{string}[] args)
+        \{
+            \textcolor{comment}{// loads the file to memory}
+            BaseNode node = XMLFileManager.LoadFile(\textcolor{stringliteral}{"path/to/your/file.xml"});
+        \}
+    \}
+\}
+\end{DoxyCodeInclude}
+ 

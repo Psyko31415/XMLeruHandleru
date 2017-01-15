@@ -5,7 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace XMLeruHandleru
-{
+{    /**
+     * @brief Represents a string value within the document
+     */
     class StringNode : BaseNode
     {
         /**
@@ -17,6 +19,13 @@ namespace XMLeruHandleru
         {
             Name = name;
             Parent = parent;
+        }
+        /**
+         * @brief Throws an exception because the action can not be applied to a StringNode
+         */
+        public override string GetAttr(string k)
+        {
+            throw new Exception("Action not valid for string");
         }
         /**
          * @brief Throws an exception because the action can not be applied to a StringNode
@@ -87,7 +96,7 @@ namespace XMLeruHandleru
         /**
          * @brief Does nothing because StringNodes are not desierable when serching
          */
-        public override void GetCssLikeRec(string[] rules, ref List<BaseNode> res)
+        internal override void GetCssLikeRec(string[] rules, ref List<BaseNode> res)
         {
             
         }
@@ -95,7 +104,7 @@ namespace XMLeruHandleru
          * @brief Since StringNodes are not desierable when serching no rule matches them
          * @return false
          */
-        public override bool RulesMatches(string[] rules, int i)
+        internal override bool RulesMatches(string[] rules, int i)
         {
             return false;
         }

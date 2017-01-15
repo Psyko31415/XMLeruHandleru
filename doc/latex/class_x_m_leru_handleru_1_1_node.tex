@@ -1,5 +1,10 @@
 \hypertarget{class_x_m_leru_handleru_1_1_node}{}\section{X\+M\+Leru\+Handleru.\+Node Class Reference}
 \label{class_x_m_leru_handleru_1_1_node}\index{X\+M\+Leru\+Handleru.\+Node@{X\+M\+Leru\+Handleru.\+Node}}
+
+
+Represents a xml node with children and attributes Example.  
+
+
 Inheritance diagram for X\+M\+Leru\+Handleru.\+Node\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -15,6 +20,8 @@ Inheritance diagram for X\+M\+Leru\+Handleru.\+Node\+:\begin{figure}[H]
 \begin{DoxyCompactList}\small\item\em Creates a new node without children and attributes. \end{DoxyCompactList}\item 
 \hyperlink{class_x_m_leru_handleru_1_1_node_ad8005a9ca54062189361e811e7064cff}{Node} (string name)
 \begin{DoxyCompactList}\small\item\em Creates a new root node without children, attributes and parent. \end{DoxyCompactList}\item 
+override string \hyperlink{class_x_m_leru_handleru_1_1_node_a48a1af10d6641de6b360dd5b2e3e3729}{Get\+Attr} (string k)
+\begin{DoxyCompactList}\small\item\em Return an attribute. \end{DoxyCompactList}\item 
 override \hyperlink{class_x_m_leru_handleru_1_1_base_node}{Base\+Node} \hyperlink{class_x_m_leru_handleru_1_1_node_aa79ab2740c301fca30270de273d1c796}{Add\+Node} (string name)
 \begin{DoxyCompactList}\small\item\em Creates and adds a child \hyperlink{class_x_m_leru_handleru_1_1_node}{Node}. \end{DoxyCompactList}\item 
 override \hyperlink{class_x_m_leru_handleru_1_1_base_node}{Base\+Node} \hyperlink{class_x_m_leru_handleru_1_1_node_ad6070ed490bfde070bdb07461fd873e1}{Add\+Child} (\hyperlink{class_x_m_leru_handleru_1_1_base_node}{Base\+Node} n)
@@ -32,22 +39,63 @@ override \hyperlink{class_x_m_leru_handleru_1_1_base_node}{Base\+Node} \hyperlin
 override int \hyperlink{class_x_m_leru_handleru_1_1_node_a8d024d88abb37f16a7b46cb5bfdf5345}{Get\+Child\+Count} ()
 \begin{DoxyCompactList}\small\item\em Returns the number of children. \end{DoxyCompactList}\item 
 override List$<$ \hyperlink{class_x_m_leru_handleru_1_1_base_node}{Base\+Node} $>$ \hyperlink{class_x_m_leru_handleru_1_1_node_a2d2c1b582bd36ee9241763d108bd82e0}{Get\+Css\+Like} (string query)
-\begin{DoxyCompactList}\small\item\em Not impelmented. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Uses a css like query format to fetch nodes. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_x_m_leru_handleru_1_1_node_afa682372142a202eca56962f9ca4eb6a}{}List$<$ \hyperlink{class_x_m_leru_handleru_1_1_base_node}{Base\+Node} $>$ {\bfseries Children}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}\label{class_x_m_leru_handleru_1_1_node_afa682372142a202eca56962f9ca4eb6a}
+\hypertarget{class_x_m_leru_handleru_1_1_node_afa682372142a202eca56962f9ca4eb6a}{}List$<$ \hyperlink{class_x_m_leru_handleru_1_1_base_node}{Base\+Node} $>$ \hyperlink{class_x_m_leru_handleru_1_1_node_afa682372142a202eca56962f9ca4eb6a}{Children}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}\label{class_x_m_leru_handleru_1_1_node_afa682372142a202eca56962f9ca4eb6a}
 
-\item 
-\hypertarget{class_x_m_leru_handleru_1_1_node_a4d11bd34b693152c527f9add8997cea5}{}Dictionary$<$ string, string $>$ {\bfseries Attributes}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}\label{class_x_m_leru_handleru_1_1_node_a4d11bd34b693152c527f9add8997cea5}
+\begin{DoxyCompactList}\small\item\em A list of this nodes children. \end{DoxyCompactList}\item 
+\hypertarget{class_x_m_leru_handleru_1_1_node_a4d11bd34b693152c527f9add8997cea5}{}Dictionary$<$ string, string $>$ \hyperlink{class_x_m_leru_handleru_1_1_node_a4d11bd34b693152c527f9add8997cea5}{Attributes}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}\label{class_x_m_leru_handleru_1_1_node_a4d11bd34b693152c527f9add8997cea5}
 
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The attributes associated with this node. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 string \hyperlink{class_x_m_leru_handleru_1_1_node_aeb431cd29311f2a157930ae31cb61bf8}{Attributes\+To\+String} ()
 \begin{DoxyCompactList}\small\item\em Converts the dictionary of attributes to a string. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+Represents a xml node with children and attributes Example. 
+
+
+\begin{DoxyCodeInclude}
+\textcolor{keyword}{using} \hyperlink{namespace_system}{System};
+\textcolor{keyword}{using} \hyperlink{namespace_system}{System}.Collections.Generic;
+
+\textcolor{keyword}{namespace }\hyperlink{namespace_x_m_leru_handleru}{XMLeruHandleru}.examples
+\{
+    \textcolor{keyword}{class }NodeExample
+    \{
+        \textcolor{keyword}{static} \textcolor{keywordtype}{void} Main(\textcolor{keywordtype}{string}[] args)
+        \{
+            \textcolor{comment}{// create a new node called root}
+            BaseNode root = \textcolor{keyword}{new} \hyperlink{class_x_m_leru_handleru_1_1_node_af3e096333b8dcc74789ebc04c0984856}{Node}(\textcolor{stringliteral}{"root"});
+
+            \textcolor{comment}{// add 5 childnodes to root with the name item add an attribute test set to their index mod 2}
+            \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < 5; i++)
+            \{
+                BaseNode item = root.AddNode(\textcolor{stringliteral}{"item"});
+                item.AddAttr(\textcolor{stringliteral}{"test"}, (i % 2).\hyperlink{class_x_m_leru_handleru_1_1_node_aa35d6d52814845f0c3f72ccdcdc20d13}{ToString}());
+            \}
+
+            \textcolor{comment}{// select every node of type item where the test attribute is equal to 1}
+            List<BaseNode> items = root.GetCssLike(\textcolor{stringliteral}{"item[test=1]"});
+
+            \textcolor{comment}{// Add the string Look some text to the previously selected nodes }
+            \textcolor{keywordflow}{foreach} (BaseNode item \textcolor{keywordflow}{in} items)
+            \{
+                item.AddString(\textcolor{stringliteral}{"Look some text"});
+            \}
+
+            \textcolor{comment}{// print the content of the root node}
+            Console.WriteLine(root);
+        \}
+    \}
+\}
+\end{DoxyCodeInclude}
+ 
 
 \subsection{Constructor \& Destructor Documentation}
 \hypertarget{class_x_m_leru_handleru_1_1_node_af3e096333b8dcc74789ebc04c0984856}{}\index{X\+M\+Leru\+Handleru\+::\+Node@{X\+M\+Leru\+Handleru\+::\+Node}!Node@{Node}}
@@ -219,6 +267,29 @@ Converts the dictionary of attributes to a string.
 \begin{DoxyReturn}{Returns}
 The string 
 \end{DoxyReturn}
+\hypertarget{class_x_m_leru_handleru_1_1_node_a48a1af10d6641de6b360dd5b2e3e3729}{}\index{X\+M\+Leru\+Handleru\+::\+Node@{X\+M\+Leru\+Handleru\+::\+Node}!Get\+Attr@{Get\+Attr}}
+\index{Get\+Attr@{Get\+Attr}!X\+M\+Leru\+Handleru\+::\+Node@{X\+M\+Leru\+Handleru\+::\+Node}}
+\subsubsection[{Get\+Attr}]{\setlength{\rightskip}{0pt plus 5cm}override string X\+M\+Leru\+Handleru.\+Node.\+Get\+Attr (
+\begin{DoxyParamCaption}
+\item[{string}]{k}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_x_m_leru_handleru_1_1_node_a48a1af10d6641de6b360dd5b2e3e3729}
+
+
+Return an attribute. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k} & The key \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding attribute 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_x_m_leru_handleru_1_1_base_node}{X\+M\+Leru\+Handleru.\+Base\+Node}.
+
 \hypertarget{class_x_m_leru_handleru_1_1_node_a2e756780a13a8ce3f8b84aaa61a6c0cc}{}\index{X\+M\+Leru\+Handleru\+::\+Node@{X\+M\+Leru\+Handleru\+::\+Node}!Get\+Child@{Get\+Child}}
 \index{Get\+Child@{Get\+Child}!X\+M\+Leru\+Handleru\+::\+Node@{X\+M\+Leru\+Handleru\+::\+Node}}
 \subsubsection[{Get\+Child}]{\setlength{\rightskip}{0pt plus 5cm}override {\bf Base\+Node} X\+M\+Leru\+Handleru.\+Node.\+Get\+Child (
@@ -269,7 +340,7 @@ Implements \hyperlink{class_x_m_leru_handleru_1_1_base_node}{X\+M\+Leru\+Handler
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_x_m_leru_handleru_1_1_node_a2d2c1b582bd36ee9241763d108bd82e0}
 
 
-Not impelmented. 
+Uses a css like query format to fetch nodes. 
 
 
 \begin{DoxyParams}{Parameters}

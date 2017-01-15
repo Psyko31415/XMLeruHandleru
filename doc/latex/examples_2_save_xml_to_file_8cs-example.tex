@@ -1,0 +1,35 @@
+\hypertarget{examples_2_save_xml_to_file_8cs-example}{}\section{examples/\+Save\+Xml\+To\+File.\+cs}
+Saves the xml structure to a file 
+\begin{DoxyParams}{Parameters}
+{\em path} & The path to where the xml should be saved \\
+\hline
+{\em node} & The node to save from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+
+\begin{DoxyCodeInclude}
+\textcolor{keyword}{using} \hyperlink{namespace_system}{System};
+\textcolor{keyword}{using} \hyperlink{namespace_system}{System}.Collections.Generic;
+\textcolor{keyword}{using} \hyperlink{namespace_system}{System}.Linq;
+\textcolor{keyword}{using} \hyperlink{namespace_system}{System}.Text;
+\textcolor{keyword}{using} \hyperlink{namespace_system}{System}.Threading.Tasks;
+
+\textcolor{keyword}{namespace }\hyperlink{namespace_x_m_leru_handleru}{XMLeruHandleru}.examples
+\{
+    \textcolor{keyword}{class }SaveXmlToFile
+    \{
+        \textcolor{keyword}{static} \textcolor{keywordtype}{void} Main(\textcolor{keywordtype}{string}[] args)
+        \{
+            \textcolor{comment}{// get the data from somewhere}
+            BaseNode node = XMLFileManager.LoadFile(\textcolor{stringliteral}{"path/to/your/file.xml"});
+
+            \textcolor{comment}{// save to a file}
+            XMLFileManager.SaveToFile(\textcolor{stringliteral}{"path/to/your/destination.xml"}, node);
+        \}
+    \}
+\}
+\end{DoxyCodeInclude}
+ 

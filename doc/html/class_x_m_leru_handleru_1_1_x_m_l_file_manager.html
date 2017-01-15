@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Properties</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -95,6 +95,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">XMLeruHandleru.XMLFileManager Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A class with functions to interact with the file system. Exampel usage.  
+ <a href="class_x_m_leru_handleru_1_1_x_m_l_file_manager.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -114,13 +117,45 @@ Static Private Member Functions</h2></td></tr>
 <tr class="memdesc:ab2319255e299a848a93e5b464615ecae"><td class="mdescLeft">&#160;</td><td class="mdescRight">The recursive function that converts a xml string to the internal datastructure.  <a href="#ab2319255e299a848a93e5b464615ecae">More...</a><br /></td></tr>
 <tr class="separator:ab2319255e299a848a93e5b464615ecae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb410d025ea3a465f050996541bb9d1c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_m_leru_handleru_1_1_x_m_l_file_manager.html#adb410d025ea3a465f050996541bb9d1c">AddStringToTree</a> (string xml, int stringStart, int stringStop, <a class="el" href="class_x_m_leru_handleru_1_1_base_node.html">BaseNode</a> parent)</td></tr>
-<tr class="memdesc:adb410d025ea3a465f050996541bb9d1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a string node to the internal tree. Used by ::RecLoadXml()  <a href="#adb410d025ea3a465f050996541bb9d1c">More...</a><br /></td></tr>
+<tr class="memdesc:adb410d025ea3a465f050996541bb9d1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a string node to the internal tree. Used by <a class="el" href="class_x_m_leru_handleru_1_1_x_m_l_file_manager.html#ab2319255e299a848a93e5b464615ecae" title="The recursive function that converts a xml string to the internal datastructure. ">RecLoadXml()</a>  <a href="#adb410d025ea3a465f050996541bb9d1c">More...</a><br /></td></tr>
 <tr class="separator:adb410d025ea3a465f050996541bb9d1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecd66054ac6671e6723bd437fa5a73b1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_m_leru_handleru_1_1_x_m_l_file_manager.html#aecd66054ac6671e6723bd437fa5a73b1">LoadHead</a> (string data, out string name, out Dictionary&lt; string, string &gt; attrs)</td></tr>
 <tr class="memdesc:aecd66054ac6671e6723bd437fa5a73b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses and loads the xml head for a node.  <a href="#aecd66054ac6671e6723bd437fa5a73b1">More...</a><br /></td></tr>
 <tr class="separator:aecd66054ac6671e6723bd437fa5a73b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A class with functions to interact with the file system. Exampel usage. </p>
+<div class="fragment"><div class="line"><span class="keyword">namespace </span><a class="code" href="namespace_x_m_leru_handleru.html">XMLeruHandleru</a>.examples</div>
+<div class="line">{</div>
+<div class="line">    <span class="keyword">class </span>XMLFileManagerExample</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keyword">static</span> <span class="keywordtype">void</span> Main(<span class="keywordtype">string</span>[] args)</div>
+<div class="line">        {</div>
+<div class="line">            <span class="comment">// path to your xml file</span></div>
+<div class="line">            <span class="keywordtype">string</span> pathToXmlFile = <span class="stringliteral">&quot;text.xml&quot;</span>;</div>
+<div class="line"></div>
+<div class="line">            <span class="comment">// Load xml from your file into a root node</span></div>
+<div class="line">            BaseNode rootNodeFromFile = XMLFileManager.LoadFile(pathToXmlFile);</div>
+<div class="line"></div>
+<div class="line">            <span class="comment">// A xml string contaning the xml to be loaded</span></div>
+<div class="line">            <span class="keywordtype">string</span> xml = <span class="stringliteral">&quot;&lt;parent name=\&quot;1\&quot;&gt;&lt;child&gt;&lt;/child&gt;&lt;/parent&gt;&quot;</span>;</div>
+<div class="line"></div>
+<div class="line">            <span class="comment">// Load the content of the string into another root node</span></div>
+<div class="line">            BaseNode rootNodeFromString = XMLFileManager.LoadString(xml);</div>
+<div class="line"></div>
+<div class="line">            <span class="comment">// do some actions with rootNodeFromFile and rootNodeFromString</span></div>
+<div class="line">            <span class="comment">// ...</span></div>
+<div class="line">            <span class="comment">// ...</span></div>
+<div class="line"></div>
+<div class="line">            <span class="comment">// The file you wish to save to</span></div>
+<div class="line">            <span class="keywordtype">string</span> pathToSaveTo = <span class="stringliteral">&quot;save.xml&quot;</span>;</div>
+<div class="line"></div>
+<div class="line">            <span class="comment">// Saves the xml</span></div>
+<div class="line">            XMLFileManager.SaveToFile(pathToSaveTo, rootNodeFromFile);</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --> </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="adb410d025ea3a465f050996541bb9d1c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -165,13 +200,13 @@ Static Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Adds a string node to the internal tree. Used by ::RecLoadXml() </p>
+<p>Adds a string node to the internal tree. Used by <a class="el" href="class_x_m_leru_handleru_1_1_x_m_l_file_manager.html#ab2319255e299a848a93e5b464615ecae" title="The recursive function that converts a xml string to the internal datastructure. ">RecLoadXml()</a> </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">xml</td><td>The xml string to gather a data string from </td></tr>
     <tr><td class="paramname">stringStart</td><td>The start index for the datastring </td></tr>
     <tr><td class="paramname">stringStop</td><td>The stop index for the datastring </td></tr>
-    <tr><td class="paramname">parent</td><td>The parent node, to which the newly created <a class="el" href="class_x_m_leru_handleru_1_1_string_node.html">StringNode</a> is appenden </td></tr>
+    <tr><td class="paramname">parent</td><td>The parent node, to which the newly created <a class="el" href="class_x_m_leru_handleru_1_1_string_node.html" title="Represents a string value within the document. ">StringNode</a> is appenden </td></tr>
   </table>
   </dd>
 </dl>
@@ -390,7 +425,7 @@ Static Private Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 14 2017 17:19:59 for XMLeruHandleru by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jan 15 2017 01:52:02 for XMLeruHandleru by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

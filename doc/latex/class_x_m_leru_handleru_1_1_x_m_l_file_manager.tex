@@ -1,5 +1,10 @@
 \hypertarget{class_x_m_leru_handleru_1_1_x_m_l_file_manager}{}\section{X\+M\+Leru\+Handleru.\+X\+M\+L\+File\+Manager Class Reference}
 \label{class_x_m_leru_handleru_1_1_x_m_l_file_manager}\index{X\+M\+Leru\+Handleru.\+X\+M\+L\+File\+Manager@{X\+M\+Leru\+Handleru.\+X\+M\+L\+File\+Manager}}
+
+
+A class with functions to interact with the file system. Exampel usage.  
+
+
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -15,10 +20,48 @@ static \hyperlink{class_x_m_leru_handleru_1_1_base_node}{Base\+Node} \hyperlink{
 static \hyperlink{class_x_m_leru_handleru_1_1_base_node}{Base\+Node} \hyperlink{class_x_m_leru_handleru_1_1_x_m_l_file_manager_ab2319255e299a848a93e5b464615ecae}{Rec\+Load\+Xml} (string xml, \hyperlink{class_x_m_leru_handleru_1_1_base_node}{Base\+Node} parent)
 \begin{DoxyCompactList}\small\item\em The recursive function that converts a xml string to the internal datastructure. \end{DoxyCompactList}\item 
 static void \hyperlink{class_x_m_leru_handleru_1_1_x_m_l_file_manager_adb410d025ea3a465f050996541bb9d1c}{Add\+String\+To\+Tree} (string xml, int string\+Start, int string\+Stop, \hyperlink{class_x_m_leru_handleru_1_1_base_node}{Base\+Node} parent)
-\begin{DoxyCompactList}\small\item\em Adds a string node to the internal tree. Used by \+::\+Rec\+Load\+Xml() \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Adds a string node to the internal tree. Used by \hyperlink{class_x_m_leru_handleru_1_1_x_m_l_file_manager_ab2319255e299a848a93e5b464615ecae}{Rec\+Load\+Xml()} \end{DoxyCompactList}\item 
 static void \hyperlink{class_x_m_leru_handleru_1_1_x_m_l_file_manager_aecd66054ac6671e6723bd437fa5a73b1}{Load\+Head} (string data, out string name, out Dictionary$<$ string, string $>$ attrs)
 \begin{DoxyCompactList}\small\item\em Parses and loads the xml head for a node. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+A class with functions to interact with the file system. Exampel usage. 
+
+
+\begin{DoxyCodeInclude}
+\textcolor{keyword}{namespace }\hyperlink{namespace_x_m_leru_handleru}{XMLeruHandleru}.examples
+\{
+    \textcolor{keyword}{class }XMLFileManagerExample
+    \{
+        \textcolor{keyword}{static} \textcolor{keywordtype}{void} Main(\textcolor{keywordtype}{string}[] args)
+        \{
+            \textcolor{comment}{// path to your xml file}
+            \textcolor{keywordtype}{string} pathToXmlFile = \textcolor{stringliteral}{"text.xml"};
+
+            \textcolor{comment}{// Load xml from your file into a root node}
+            BaseNode rootNodeFromFile = XMLFileManager.LoadFile(pathToXmlFile);
+
+            \textcolor{comment}{// A xml string contaning the xml to be loaded}
+            \textcolor{keywordtype}{string} xml = \textcolor{stringliteral}{"<parent name=\(\backslash\)"1\(\backslash\)"><child></child></parent>"};
+
+            \textcolor{comment}{// Load the content of the string into another root node}
+            BaseNode rootNodeFromString = XMLFileManager.LoadString(xml);
+
+            \textcolor{comment}{// do some actions with rootNodeFromFile and rootNodeFromString}
+            \textcolor{comment}{// ...}
+            \textcolor{comment}{// ...}
+
+            \textcolor{comment}{// The file you wish to save to}
+            \textcolor{keywordtype}{string} pathToSaveTo = \textcolor{stringliteral}{"save.xml"};
+
+            \textcolor{comment}{// Saves the xml}
+            XMLFileManager.SaveToFile(pathToSaveTo, rootNodeFromFile);
+        \}
+    \}
+\}
+\end{DoxyCodeInclude}
+ 
 
 \subsection{Member Function Documentation}
 \hypertarget{class_x_m_leru_handleru_1_1_x_m_l_file_manager_adb410d025ea3a465f050996541bb9d1c}{}\index{X\+M\+Leru\+Handleru\+::\+X\+M\+L\+File\+Manager@{X\+M\+Leru\+Handleru\+::\+X\+M\+L\+File\+Manager}!Add\+String\+To\+Tree@{Add\+String\+To\+Tree}}
@@ -33,7 +76,7 @@ static void \hyperlink{class_x_m_leru_handleru_1_1_x_m_l_file_manager_aecd66054a
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}\label{class_x_m_leru_handleru_1_1_x_m_l_file_manager_adb410d025ea3a465f050996541bb9d1c}
 
 
-Adds a string node to the internal tree. Used by \+::\+Rec\+Load\+Xml() 
+Adds a string node to the internal tree. Used by \hyperlink{class_x_m_leru_handleru_1_1_x_m_l_file_manager_ab2319255e299a848a93e5b464615ecae}{Rec\+Load\+Xml()} 
 
 
 \begin{DoxyParams}{Parameters}

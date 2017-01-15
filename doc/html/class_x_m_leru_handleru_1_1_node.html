@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Properties</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -96,13 +96,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">XMLeruHandleru.Node Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Represents a xml node with children and attributes Example.  
+ <a href="class_x_m_leru_handleru_1_1_node.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for XMLeruHandleru.Node:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="class_x_m_leru_handleru_1_1_node.png" usemap="#XMLeruHandleru.Node_map" alt=""/>
   <map id="XMLeruHandleru.Node_map" name="XMLeruHandleru.Node_map">
-<area href="class_x_m_leru_handleru_1_1_base_node.html" alt="XMLeruHandleru.BaseNode" shape="rect" coords="0,0,172,24"/>
+<area href="class_x_m_leru_handleru_1_1_base_node.html" title="The abstract class that contains every method for the different nodes. " alt="XMLeruHandleru.BaseNode" shape="rect" coords="0,0,172,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -117,14 +120,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad8005a9ca54062189361e811e7064cff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_m_leru_handleru_1_1_node.html#ad8005a9ca54062189361e811e7064cff">Node</a> (string name)</td></tr>
 <tr class="memdesc:ad8005a9ca54062189361e811e7064cff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new root node without children, attributes and parent.  <a href="#ad8005a9ca54062189361e811e7064cff">More...</a><br /></td></tr>
 <tr class="separator:ad8005a9ca54062189361e811e7064cff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48a1af10d6641de6b360dd5b2e3e3729"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_m_leru_handleru_1_1_node.html#a48a1af10d6641de6b360dd5b2e3e3729">GetAttr</a> (string k)</td></tr>
+<tr class="memdesc:a48a1af10d6641de6b360dd5b2e3e3729"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an attribute.  <a href="#a48a1af10d6641de6b360dd5b2e3e3729">More...</a><br /></td></tr>
+<tr class="separator:a48a1af10d6641de6b360dd5b2e3e3729"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa79ab2740c301fca30270de273d1c796"><td class="memItemLeft" align="right" valign="top">override <a class="el" href="class_x_m_leru_handleru_1_1_base_node.html">BaseNode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_m_leru_handleru_1_1_node.html#aa79ab2740c301fca30270de273d1c796">AddNode</a> (string name)</td></tr>
-<tr class="memdesc:aa79ab2740c301fca30270de273d1c796"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates and adds a child <a class="el" href="class_x_m_leru_handleru_1_1_node.html">Node</a>.  <a href="#aa79ab2740c301fca30270de273d1c796">More...</a><br /></td></tr>
+<tr class="memdesc:aa79ab2740c301fca30270de273d1c796"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates and adds a child <a class="el" href="class_x_m_leru_handleru_1_1_node.html" title="Represents a xml node with children and attributes Example. ">Node</a>.  <a href="#aa79ab2740c301fca30270de273d1c796">More...</a><br /></td></tr>
 <tr class="separator:aa79ab2740c301fca30270de273d1c796"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6070ed490bfde070bdb07461fd873e1"><td class="memItemLeft" align="right" valign="top">override <a class="el" href="class_x_m_leru_handleru_1_1_base_node.html">BaseNode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_m_leru_handleru_1_1_node.html#ad6070ed490bfde070bdb07461fd873e1">AddChild</a> (<a class="el" href="class_x_m_leru_handleru_1_1_base_node.html">BaseNode</a> n)</td></tr>
 <tr class="memdesc:ad6070ed490bfde070bdb07461fd873e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a child.  <a href="#ad6070ed490bfde070bdb07461fd873e1">More...</a><br /></td></tr>
 <tr class="separator:ad6070ed490bfde070bdb07461fd873e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74b20c07c1d044392ae7670d58679c90"><td class="memItemLeft" align="right" valign="top">override <a class="el" href="class_x_m_leru_handleru_1_1_base_node.html">BaseNode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_m_leru_handleru_1_1_node.html#a74b20c07c1d044392ae7670d58679c90">AddString</a> (string s)</td></tr>
-<tr class="memdesc:a74b20c07c1d044392ae7670d58679c90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates and adds a child <a class="el" href="class_x_m_leru_handleru_1_1_string_node.html">StringNode</a>.  <a href="#a74b20c07c1d044392ae7670d58679c90">More...</a><br /></td></tr>
+<tr class="memdesc:a74b20c07c1d044392ae7670d58679c90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates and adds a child <a class="el" href="class_x_m_leru_handleru_1_1_string_node.html" title="Represents a string value within the document. ">StringNode</a>.  <a href="#a74b20c07c1d044392ae7670d58679c90">More...</a><br /></td></tr>
 <tr class="separator:a74b20c07c1d044392ae7670d58679c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af847932f7294cc39d8a3f6f89062a950"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_m_leru_handleru_1_1_node.html#af847932f7294cc39d8a3f6f89062a950">AddAttr</a> (string k, string v)</td></tr>
 <tr class="memdesc:af847932f7294cc39d8a3f6f89062a950"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an attribute.  <a href="#af847932f7294cc39d8a3f6f89062a950">More...</a><br /></td></tr>
@@ -142,23 +148,27 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a8d024d88abb37f16a7b46cb5bfdf5345"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of children.  <a href="#a8d024d88abb37f16a7b46cb5bfdf5345">More...</a><br /></td></tr>
 <tr class="separator:a8d024d88abb37f16a7b46cb5bfdf5345"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d2c1b582bd36ee9241763d108bd82e0"><td class="memItemLeft" align="right" valign="top">override List&lt; <a class="el" href="class_x_m_leru_handleru_1_1_base_node.html">BaseNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_m_leru_handleru_1_1_node.html#a2d2c1b582bd36ee9241763d108bd82e0">GetCssLike</a> (string query)</td></tr>
-<tr class="memdesc:a2d2c1b582bd36ee9241763d108bd82e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Not impelmented.  <a href="#a2d2c1b582bd36ee9241763d108bd82e0">More...</a><br /></td></tr>
+<tr class="memdesc:a2d2c1b582bd36ee9241763d108bd82e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uses a css like query format to fetch nodes.  <a href="#a2d2c1b582bd36ee9241763d108bd82e0">More...</a><br /></td></tr>
 <tr class="separator:a2d2c1b582bd36ee9241763d108bd82e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:afa682372142a202eca56962f9ca4eb6a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afa682372142a202eca56962f9ca4eb6a"></a>
-List&lt; <a class="el" href="class_x_m_leru_handleru_1_1_base_node.html">BaseNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Children</b><code> [get, set]</code></td></tr>
+List&lt; <a class="el" href="class_x_m_leru_handleru_1_1_base_node.html">BaseNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_m_leru_handleru_1_1_node.html#afa682372142a202eca56962f9ca4eb6a">Children</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:afa682372142a202eca56962f9ca4eb6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of this nodes children. <br /></td></tr>
 <tr class="separator:afa682372142a202eca56962f9ca4eb6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d11bd34b693152c527f9add8997cea5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4d11bd34b693152c527f9add8997cea5"></a>
-Dictionary&lt; string, string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Attributes</b><code> [get, set]</code></td></tr>
+Dictionary&lt; string, string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_m_leru_handleru_1_1_node.html#a4d11bd34b693152c527f9add8997cea5">Attributes</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a4d11bd34b693152c527f9add8997cea5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The attributes associated with this node. <br /></td></tr>
 <tr class="separator:a4d11bd34b693152c527f9add8997cea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header properties_class_x_m_leru_handleru_1_1_base_node"><td colspan="2" onclick="javascript:toggleInherit('properties_class_x_m_leru_handleru_1_1_base_node')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="class_x_m_leru_handleru_1_1_base_node.html">XMLeruHandleru.BaseNode</a></td></tr>
 <tr class="memitem:ac3c3e0c083a9da350e5511163668ac81 inherit properties_class_x_m_leru_handleru_1_1_base_node"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac3c3e0c083a9da350e5511163668ac81"></a>
-<a class="el" href="class_x_m_leru_handleru_1_1_base_node.html">BaseNode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Parent</b><code> [get, set]</code></td></tr>
+<a class="el" href="class_x_m_leru_handleru_1_1_base_node.html">BaseNode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_m_leru_handleru_1_1_base_node.html#ac3c3e0c083a9da350e5511163668ac81">Parent</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ac3c3e0c083a9da350e5511163668ac81 inherit properties_class_x_m_leru_handleru_1_1_base_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">The parent node. <br /></td></tr>
 <tr class="separator:ac3c3e0c083a9da350e5511163668ac81 inherit properties_class_x_m_leru_handleru_1_1_base_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a693bfdbaf05b7554897d475afd2f4768 inherit properties_class_x_m_leru_handleru_1_1_base_node"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a693bfdbaf05b7554897d475afd2f4768"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>Name</b><code> [get, protected set]</code></td></tr>
+string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_m_leru_handleru_1_1_base_node.html#a693bfdbaf05b7554897d475afd2f4768">Name</a><code> [get, protected set]</code></td></tr>
+<tr class="memdesc:a693bfdbaf05b7554897d475afd2f4768 inherit properties_class_x_m_leru_handleru_1_1_base_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the node. <br /></td></tr>
 <tr class="separator:a693bfdbaf05b7554897d475afd2f4768 inherit properties_class_x_m_leru_handleru_1_1_base_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
@@ -167,7 +177,42 @@ Private Member Functions</h2></td></tr>
 <tr class="memdesc:aeb431cd29311f2a157930ae31cb61bf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the dictionary of attributes to a string.  <a href="#aeb431cd29311f2a157930ae31cb61bf8">More...</a><br /></td></tr>
 <tr class="separator:aeb431cd29311f2a157930ae31cb61bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Represents a xml node with children and attributes Example. </p>
+<div class="fragment"><div class="line"><span class="keyword">using</span> <a class="code" href="namespace_system.html">System</a>;</div>
+<div class="line"><span class="keyword">using</span> <a class="code" href="namespace_system.html">System</a>.Collections.Generic;</div>
+<div class="line"></div>
+<div class="line"><span class="keyword">namespace </span><a class="code" href="namespace_x_m_leru_handleru.html">XMLeruHandleru</a>.examples</div>
+<div class="line">{</div>
+<div class="line">    <span class="keyword">class </span>NodeExample</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keyword">static</span> <span class="keywordtype">void</span> Main(<span class="keywordtype">string</span>[] args)</div>
+<div class="line">        {</div>
+<div class="line">            <span class="comment">// create a new node called root</span></div>
+<div class="line">            BaseNode root = <span class="keyword">new</span> <a class="code" href="class_x_m_leru_handleru_1_1_node.html#af3e096333b8dcc74789ebc04c0984856">Node</a>(<span class="stringliteral">&quot;root&quot;</span>);</div>
+<div class="line"></div>
+<div class="line">            <span class="comment">// add 5 childnodes to root with the name item add an attribute test set to their index mod 2</span></div>
+<div class="line">            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 5; i++)</div>
+<div class="line">            {</div>
+<div class="line">                BaseNode item = root.AddNode(<span class="stringliteral">&quot;item&quot;</span>);</div>
+<div class="line">                item.AddAttr(<span class="stringliteral">&quot;test&quot;</span>, (i % 2).<a class="code" href="class_x_m_leru_handleru_1_1_node.html#aa35d6d52814845f0c3f72ccdcdc20d13">ToString</a>());</div>
+<div class="line">            }</div>
+<div class="line"></div>
+<div class="line">            <span class="comment">// select every node of type item where the test attribute is equal to 1</span></div>
+<div class="line">            List&lt;BaseNode&gt; items = root.GetCssLike(<span class="stringliteral">&quot;item[test=1]&quot;</span>);</div>
+<div class="line"></div>
+<div class="line">            <span class="comment">// Add the string Look some text to the previously selected nodes </span></div>
+<div class="line">            <span class="keywordflow">foreach</span> (BaseNode item <span class="keywordflow">in</span> items)</div>
+<div class="line">            {</div>
+<div class="line">                item.AddString(<span class="stringliteral">&quot;Look some text&quot;</span>);</div>
+<div class="line">            }</div>
+<div class="line"></div>
+<div class="line">            <span class="comment">// print the content of the root node</span></div>
+<div class="line">            Console.WriteLine(root);</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="af3e096333b8dcc74789ebc04c0984856"></a>
 <div class="memitem">
 <div class="memproto">
@@ -397,7 +442,7 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Creates and adds a child <a class="el" href="class_x_m_leru_handleru_1_1_node.html">Node</a>. </p>
+<p>Creates and adds a child <a class="el" href="class_x_m_leru_handleru_1_1_node.html" title="Represents a xml node with children and attributes Example. ">Node</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>The name of the to be node </td></tr>
@@ -432,7 +477,7 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Creates and adds a child <a class="el" href="class_x_m_leru_handleru_1_1_string_node.html">StringNode</a>. </p>
+<p>Creates and adds a child <a class="el" href="class_x_m_leru_handleru_1_1_string_node.html" title="Represents a string value within the document. ">StringNode</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">s</td><td>The content of the to be node </td></tr>
@@ -468,6 +513,41 @@ Private Member Functions</h2></td></tr>
 
 <p>Converts the dictionary of attributes to a string. </p>
 <dl class="section return"><dt>Returns</dt><dd>The string </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a48a1af10d6641de6b360dd5b2e3e3729"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override string XMLeruHandleru.Node.GetAttr </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>k</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return an attribute. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">k</td><td>The key </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The corresponding attribute </dd></dl>
+
+<p>Implements <a class="el" href="class_x_m_leru_handleru_1_1_base_node.html">XMLeruHandleru.BaseNode</a>.</p>
 
 </div>
 </div>
@@ -556,7 +636,7 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Not impelmented. </p>
+<p>Uses a css like query format to fetch nodes. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">query</td><td>The query </td></tr>
@@ -636,7 +716,7 @@ Private Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 14 2017 17:19:59 for XMLeruHandleru by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jan 15 2017 01:52:01 for XMLeruHandleru by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

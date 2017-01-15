@@ -5,6 +5,9 @@
   <item ost="mojar">ost4</item>
   <item>ost6</item>
   <pommes>
-    <item>eyy oh</item>    
+    <item>eyy oh</item>
+    <ost>
+      <item>eyoh pommes skulle vara glad nu</item>      
+    </ost>
   </pommes>
 </root>
